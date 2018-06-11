@@ -1,0 +1,20 @@
+.carrousel-products .carousel-control {
+    color: #2d2b2b !important;
+}
+.carrousel-products .carousel-control.left, .carousel-control.right {
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0) 0,rgba(0,0,0,.0001) 100%) !important;
+}
+
+.produ-div{
+    text-align: center;
+}
+.car-title-product{
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center !important;
+}
+.car-par-product{
+    font-weight: 100;
+    font-size: 12px;
+    text-align: center !important;
+}

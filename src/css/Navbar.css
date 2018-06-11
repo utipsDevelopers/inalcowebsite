@@ -1,0 +1,31 @@
+.anchorcss{
+    color: white;
+    text-decoration: none;
+}
+.anchorcss:focus, .anchorcss:hover{
+    text-decoration: none;
+}
+.supercss a{
+    color: white !important;
+}
+.dropdown a{
+    color: white !important;
+}
+.dropdown-menu>li>a:hover{
+    background-color:#a0201d !important; 
+    color: white !important;
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
+    color: white !important;
+    background-color: #a0201d !important;
+}
+.navbar-right .dropdown-menu{
+    background: black !important;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+    background-color:#a0201d !important;   
+}
+.navbar-default .navbar-nav>li>a:focus, .supercss a:focus{
+    background:#a0201d !important;
+}

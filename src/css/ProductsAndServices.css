@@ -1,0 +1,130 @@
+.columna{
+  top: -174px;
+  
+}
+
+@media screen and (max-width: 423px) {
+  .columna{
+    top: 0px;
+    
+  }
+  
+}
+@media screen and (max-width: 439px) {
+  .columna{
+    top: 0px;
+    
+  }
+  
+}
+
+@media screen and (max-width: 752px) {
+  .columna{
+    top: 0px;
+    
+  }
+  .alineacion{
+    height: auto !important;
+  }
+  
+}
+
+@media screen and (max-width: 850px) {
+  .columna{
+    top: 0px;
+    
+  }
+  
+ 
+}
+
+
+@media screen and (max-width: 1000px) {
+  .columna{
+    top: 0px;
+    
+  }
+  
+}
+
+@media screen and (max-width: 1061px) {
+  .columna{
+    top: 0px;
+    
+  }
+  
+}
+@media screen and (max-width: 1181px) {
+  .columna{
+    top: 0px;
+    
+  }
+  
+}
+.appimgwrapper {
+    position: sticky;
+    display: inline-block;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  
+  .appimglink:hover:before {
+    opacity: 1;
+  }
+  
+  .appimglink:hover  .appimgtext {
+   background: transparent;
+    /*color: #312d2d;*/
+    
+  }
+  .appimglink:hover .apptitle {
+    font-size: 52px;
+    
+  }
+  
+  
+  .appimg {
+    display: block;
+     
+  }
+  .apptitle{
+    text-align:left;
+    left: 12px;
+    font-weight: bold;
+    -webkit-transition: font-size .5s ease;
+    -moz-transition: font-size .5s ease;
+    -o-transition: font-size .5s ease;
+    transition: font-size .5s ease;
+  }
+  .appimgtext {
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+    /* fallback color */
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    margin: 0;
+    height: auto;
+    transition: background .5s, color .5s;
+  }
+  
+  .appimglink:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity .5s;
+    opacity: 0;
+  }
