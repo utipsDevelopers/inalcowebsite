@@ -1,7 +1,7 @@
-# AceMatch Project - Landing Page :metal:
+# Inalco Website - Landing Page :metal:
 > Powered by Utips
 
-Source code of the AceMatch landing page, available [here](acematch.cl) :+1:
+Source code of the Inalco landing page:
 
 ## Authors
-- Clemente Serrano.
+- Camilo Zepeda.
