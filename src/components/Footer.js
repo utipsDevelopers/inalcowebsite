@@ -11,7 +11,7 @@ const MyMapComponent = compose(
   withProps({
     googleMapURL: "https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places",
     loadingElement: <div style={{ height: `100%` }} />,
-    containerElement: <div style={{ height: `200px`,  width: '100%' }} />,
+    containerElement: <div style={{ height: `350px`}} />,
     mapElement: <div style={{ height: `100%` }} />,
   }),
   withScriptjs,
@@ -32,33 +32,37 @@ const Footer = () => (
         <Col lg={2} md={2} sm={2}  mdPush={3} smPush={3} >
           <a className="Icon" >
             <SuperItem name="phone" size="5x"/>
-            <p style={{fontSize:"12px"}}>+56 2283 49 101</p>
+            <p style={{marginTop: "10px",fontSize:"12px"}}>+56 2283 49 101</p>
           </a>
         </Col>
         <Col lg={2} md={2} sm={2}  mdPush={3} smPush={3} >
           <a className="Icon" href="https://www.facebook.com/inalcocarservice/">
             <SuperItem name="facebook-square" size="5x"/>
             
-            <p style={{fontSize:"12px"}}>/inalcocarservice</p>
+            <p style={{marginTop: "10px",fontSize:"12px"}}>/inalcocarservice</p>
           </a>
         </Col>
         <Col lg={2} md={2} sm={2}  mdPush={3} smPush={3}  >
           <a className="Icon" >
             <SuperItem name="envelope" size="5x"/>
-            <p style={{fontSize:"12px"}}>contacto@inalcocarservice.cl</p>
+            <p style={{marginTop: "10px",fontSize:"12px"}}>contacto@inalcocarservice.cl</p>
           </a>
         </Col>
       </Row>
     </Grid>
-    <Row>
-    <MyMapComponent isMarkerShown />
-    </Row>
-      <Row>
-        <Col lg={12}>
+   
+      <div style={{ width: '107.3%', marginTop:'50px',marginBottom:'50px'}}>
+      <MyMapComponent  isMarkerShown />
+      </div>
+         <Row>
+        <Col lg={12} style={{marginLeft:'24px'}}>
           <img src={Inalcologo} className="logo" alt="" width="200px" height="90px"/>
         </Col>
       </Row>
-    </AvailableImgsContainer>
+      
+      </AvailableImgsContainer>
+      
+    
     <FooterItems1>© 2018 Inalco Car Services.</FooterItems1>
     <FooterItems2>Powered by Utips </FooterItems2>
   </FooterStyle>
@@ -69,7 +73,8 @@ export default Footer;
 const FooterStyle = styled.div`
   position:relative;
   bottom:0;
-  width: 100%;
+  width: 95%;
+  
 `;
 
 const AvailableImgsContainer = styled.div`
@@ -84,6 +89,7 @@ const FooterItems1 = styled.li`
   font-family: 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 100;
   font-size: 15px;
+  margin-left: 48px;
   margin-top: 40px;
   margin-bottom: 10px;
 `;
@@ -95,6 +101,7 @@ const FooterItems2 = styled.li`
   font-family: 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 100;
   font-size: 15px;
+  margin-left: 48px;
   margin-bottom: 40px;
 `;
 const SuperItem = styled(FontAwesome)`

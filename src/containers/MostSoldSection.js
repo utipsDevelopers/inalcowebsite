@@ -97,12 +97,13 @@ export default MostSoldSection;
 
 const SuperContainer = styled.header`
   position: relative;
-  width: 100%;
-  padding-bottom: 100px;
+  width: 102.05%;
+  padding-top: 110px;
+  padding-bottom: 220px;
   background: #fff;
 `;
 const Title = styled.h1`
-font-size: 76px;
+font-size: 100px;
 text-align: center;
 margin-top: 100px;
 margin-bottom: 80px;

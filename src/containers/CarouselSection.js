@@ -42,6 +42,7 @@ const SectionMargin = styled.section`
   position: relative;
   background-color: #212121;
   text-align: center;
+  width: 102.05%;
 `;
 const Title1 = styled.h2`
   font-size: 100px;

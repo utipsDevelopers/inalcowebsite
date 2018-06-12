@@ -94,9 +94,10 @@ export default ProductsandServicesSection;
 
 const SectionMargin = styled.section`
   position: relative;
-  padding: 50px 0;
-  
+  padding-top: 220px;
+  padding-bottom: 175px;
   text-align: left;
+  width: 102.05%;
   background-color: #ffffff;
   @media screen and (max-width: 850px) {
     text-align: center;

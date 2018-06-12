@@ -24,6 +24,7 @@ export default IntroSection;
 const SectionMargin = styled.section`
   position: relative;
   padding: 150px 0;
+  width: 102.05%;
   background-color: #212121;
   text-align: center;
 `;

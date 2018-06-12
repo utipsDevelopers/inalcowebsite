@@ -24,7 +24,7 @@ export default FrontSection;
 
 const SuperContainer = styled.header`
   position: relative;
-  width: 100%;
+  width: 102.05%;
   padding-top: 150px;
   padding-bottom: 400px;
   color: white;

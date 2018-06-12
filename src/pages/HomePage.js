@@ -22,7 +22,7 @@ const HomePage = () => (
           <AnchorLink  href='#frontsection'>
             <Image src={logo} style={{ 
                 height: '50px',
-                width: '143px', 
+                width: '128px', 
                 maxWidth: '100%',
                 marginTop:"-18px",
                 marginBottom: '-10px'}}  />

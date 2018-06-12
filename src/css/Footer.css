@@ -1,13 +1,18 @@
 .Icon{
     text-decoration: none;
     color: #353333;
+    font-size:18px;
 }
 .Icon:hover{
-    font-size: 12px;
+    font-size: 15px;
     text-decoration: none;
     color: #a0201d;
 }
 .Icon:focus{
     text-decoration: none;
     color: #a0201d;
+}
+.mapa{
+    width: 1240px;
+
 }

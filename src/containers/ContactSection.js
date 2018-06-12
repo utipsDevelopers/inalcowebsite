@@ -125,8 +125,10 @@ export default ContactSection;
 
 const SectionMargin = styled.section`
   position: relative;
-  padding: 150px 0;
+  padding-top: 180px;
+  padding-bottom: 220px;
   background: #262626;
+  width: 102.05%;
   text-align: right;
   @media screen and (max-width: 850px) {
     text-align: center;
@@ -137,10 +139,10 @@ const SectionMargin = styled.section`
 `;
 
 const Title = styled.h1`
-  font-size: 112px;
+  font-size: 100px;
   color: #fff;
   text-align: left;
-  font-weight: bold;
+  font-weight: 600;
   margin-top: auto;
   margin-bottom: auto;
   @media screen and (max-width: 850px) {
@@ -150,5 +152,9 @@ const Title = styled.h1`
   @media screen and (max-width: 800px) {
     text-align: center;
     font-size: 70px;
+  }
+  @media screen and (max-width: 350px) {
+    text-align: center;
+    font-size: 50px;
   }
 `;
