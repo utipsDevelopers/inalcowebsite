@@ -91,12 +91,6 @@ const ProductsandServicesSection = () => (
 );
 
 export default ProductsandServicesSection;
-const PHOTO_SET = [
-  {
-    src: wheel,
-    width: 12,
-    height: 12
-  }]
 
 const SectionMargin = styled.section`
   position: relative;
@@ -125,17 +119,5 @@ const Title = styled.h1`
     text-align: center;
     font-size: 50px;
   }
-`;
-const BoldTitle = styled.span`
-  font-size: 50px;
-  font-weight: bold;
-  text-align: right;
-  color: #808080;
-  margin-bottom: 40px;
-`;
-const SubTitle = styled.span`
-  font-size: 30px;
-  text-align: right;
-  color: #808080;
 `;
 

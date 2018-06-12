@@ -1,0 +1,54 @@
+.formErrors p{
+    font-size: 12px;
+    color: #e23b3b;
+    text-align: center; 
+    text-transform: uppercase;    
+}
+.textareaForm{
+    background: #acacac;
+    resize: none;
+    color: white;
+    background: #acacac;
+    resize: none;
+    color: white;
+    width: 100%;
+    height: 36%;
+    border-radius: 11px !important;
+}
+.divbutton{
+    text-align: left;
+    margin-left: 12px !important;
+}
+.enviarForm{
+    padding: 12px 22px 12px 19px !important;
+    font-size: 23px !important;
+    background: #7b7474 !important;
+    color: white !important;
+    /* margin: 12px 12; */
+    border: none !important;
+    font-weight: bold !important;
+}
+.inputForm{
+    width: 98% !important;
+    height: 10% !important;
+    border-radius: 11px !important;
+    background: #acacac !important;
+    color: white !important;
+    margin-left: 12px !important;
+}
+::placeholder {
+    color: white !important;
+    opacity: 1; /* Firefox */
+    font-size: 20px !important;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white !important;
+    font-size: 20px !important;
+ }
+ 
+ ::-ms-input-placeholder { /* Microsoft Edge */
+    color: white !important;
+    font-size: 20px !important;
+ }
+
+ 

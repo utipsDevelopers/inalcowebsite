@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import FontAwesome from 'react-fontawesome';
-import { Grid, Row, Col,Carousel,Paragraph } from 'react-bootstrap';
+import { Grid, Row, Col,Carousel } from 'react-bootstrap';
 import prod1 from '../img/homePagelastProductsSection_img1_temporal.png';
 import prod2 from '../img/homePagelastProductsSection_img2_temporal.png';
 import prod3 from '../img/homePagelastProductsSection_img3_temporal.png';
@@ -115,17 +114,6 @@ font-weight: 600;
     font-size: 50px;
   }
 `;
-const SubTitle = styled.h3`
-  font-size: 30px;
-  text-align: center;
-  margin-bottom: 20px;
-`;
-const SuperItem = styled(FontAwesome)`
-  display: block;
-  background: -webkit-linear-gradient(to left, #7b4397, #dc2430);
-  background: linear-gradient(to left, #7b4397, #dc2430);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-`;
+
 
 

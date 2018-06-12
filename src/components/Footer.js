@@ -3,7 +3,8 @@ import { Row, Col, Grid } from 'react-bootstrap';
 import styled from 'styled-components';
 import FontAwesome from 'react-fontawesome';
 import Inalcologo from '../img/inalcoFullLogo_white.png';
-import { compose, withProps } from "recompose"
+import { compose, withProps } from "recompose";
+import '../css/Footer.css';
 import { withScriptjs, withGoogleMap, GoogleMap, Marker } from "react-google-maps"
 
 const MyMapComponent = compose(
@@ -29,16 +30,23 @@ const Footer = () => (
     <Grid bsClass="container">
       <Row>
         <Col lg={2} md={2} sm={2}  mdPush={3} smPush={3} >
-          <SuperItem name="phone" size="5x"/>
-          <p style={{fontSize:"12px"}}>+56 2283 49 101</p>
+          <a className="Icon" >
+            <SuperItem name="phone" size="5x"/>
+            <p style={{fontSize:"12px"}}>+56 2283 49 101</p>
+          </a>
         </Col>
         <Col lg={2} md={2} sm={2}  mdPush={3} smPush={3} >
-          <SuperItem name="facebook-square" size="5x"/>
-          <p style={{fontSize:"12px"}}>/inalcocarservice</p>
+          <a className="Icon" href="https://www.facebook.com/inalcocarservice/">
+            <SuperItem name="facebook-square" size="5x"/>
+            
+            <p style={{fontSize:"12px"}}>/inalcocarservice</p>
+          </a>
         </Col>
         <Col lg={2} md={2} sm={2}  mdPush={3} smPush={3}  >
-          <SuperItem name="envelope" size="5x"/>
-          <p style={{fontSize:"12px"}}>contacto@inalcocarservice.cl</p>
+          <a className="Icon" >
+            <SuperItem name="envelope" size="5x"/>
+            <p style={{fontSize:"12px"}}>contacto@inalcocarservice.cl</p>
+          </a>
         </Col>
       </Row>
     </Grid>
@@ -88,12 +96,6 @@ const FooterItems2 = styled.li`
   font-weight: 100;
   font-size: 15px;
   margin-bottom: 40px;
-`;
-const Title = styled.h1`
-  font-size: 50px;
-  text-align: center;
-  margin-top: 100px;
-  margin-bottom: 80px;
 `;
 const SuperItem = styled(FontAwesome)`
   display: block;

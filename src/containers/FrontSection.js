@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Grid, Row, Col } from 'react-bootstrap';
-import iphoneImg from '../img/iphone.png';
 import img from '../img/homePage_introWallpaper_definitive.jpg';
 
 
