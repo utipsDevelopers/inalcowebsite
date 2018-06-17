@@ -49,7 +49,7 @@ const Title1 = styled.h2`
     font-size: 60px;
   }
   @media screen and (max-width: 800px) {
-    font-size: 50px;
+    font-size: 60px;
   }
 `;
 

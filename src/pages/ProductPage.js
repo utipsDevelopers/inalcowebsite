@@ -20,7 +20,7 @@ import SuspentionsSection from '../containers/ProductPage/SuspentionsSection';
 import ContactSection from '../containers/HomePage/ContactSection';
 import Footer from '../components/Footer';
 
-const HomePage = () => (
+const ProductPage = () => (
   <div>
      <SuperNavBar  collapseOnSelect fixedTop>
     <Navbar.Header>
@@ -103,17 +103,9 @@ const HomePage = () => (
                 </AnchorLink >
               </MenuItem>
             </NavDropdown>
-            <NavDropdown  className="supercss" eventKey={3} title="Servicios" id="basic-nav-dropdown">
-              <MenuItem eventKey={3.1}><TitleNavDropdown> Servicio1 </TitleNavDropdown></MenuItem>
-              <MenuItem divider />
-              <MenuItem eventKey={3.2}><TitleNavDropdown> Servicio2 </TitleNavDropdown></MenuItem>
-              <MenuItem divider />
-              <MenuItem eventKey={3.3}><TitleNavDropdown> Servicio3 </TitleNavDropdown></MenuItem>
-              <MenuItem divider />
-              <MenuItem eventKey={3.4}><TitleNavDropdown> Servicio4 </TitleNavDropdown></MenuItem>
-              <MenuItem divider />
-              <MenuItem eventKey={3.4}><TitleNavDropdown> Servicio5 </TitleNavDropdown></MenuItem>
-            </NavDropdown>
+            <SuperNavItem className="supercss" eventKey={4} href="/services">
+              Servicios
+            </SuperNavItem>
             <SuperNavItem className="supercss" eventKey={4} href="#">
               Cotización
             </SuperNavItem>
@@ -184,7 +176,7 @@ const HomePage = () => (
   </div>
 );
 
-export default HomePage;
+export default ProductPage;
 
 const SuperNavBar = styled(Navbar)`
     border-color: rgba(34, 34, 34, 0.05);

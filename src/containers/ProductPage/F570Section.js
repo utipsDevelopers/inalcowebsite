@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Grid, Row, Col } from 'react-bootstrap';
-import battery from '../../img/homePage_servicesSection_img3_temporal.png';
-import suspensions from '../../img/homePage_servicesSection_img1_temporal.png';
+import img1 from '../../img/homePage_servicesSection_img3_temporal.png';
+import img2 from '../../img/homePage_servicesSection_img1_temporal.png';
 import '../../css/LeftProductsSection.css';
 
 
@@ -29,8 +29,8 @@ const F570Section = () => (
         </Col>
         <Col lg={6} md={6} sm={6} xsHidden>
           <div class="parent">
-            <img src={suspensions} width="380px" height="450px" className="image1570"  />
-            <img src={battery} width="400px" height="450px" className="image2570"  />
+            <img src={img2} width="380px" height="450px" className="image1570"  />
+            <img src={img1} width="400px" height="450px" className="image2570"  />
           </div>
         </Col>
         
