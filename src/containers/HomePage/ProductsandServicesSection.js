@@ -1,13 +1,13 @@
 import React from 'react';
 import { Grid, Row, Col } from 'react-bootstrap';
 import styled from 'styled-components';
-import wheel from '../img/homePage_servicesSection_img1_temporal.png'; 
-import battery from '../img/homePage_servicesSection_img3_temporal.png';
-import balance from '../img/homePage_servicesSection_img2_temporal.png';
-import maintenance from '../img/homePage_servicesSection_img8_temporal.png';
-import suspensions from '../img/homePage_servicesSection_img7_temporal.png';
-import breaks from '../img/brakes_img.png';
-import '../css/ProductsAndServices.css';
+import wheel from '../../img/homePage_servicesSection_img1_temporal.png'; 
+import battery from '../../img/homePage_servicesSection_img3_temporal.png';
+import balance from '../../img/homePage_servicesSection_img2_temporal.png';
+import maintenance from '../../img/homePage_servicesSection_img8_temporal.png';
+import suspensions from '../../img/homePage_servicesSection_img7_temporal.png';
+import breaks from '../../img/brakes_img.png';
+import '../../css/ProductsAndServices.css';
 
 const ProductsandServicesSection = () => (
   <SectionMargin>

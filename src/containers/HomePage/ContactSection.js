@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { FormErrors } from './FormErrors';
 import { Grid, Row, Col, FormGroup, ControlLabel, FormControl,HelpBlock } from 'react-bootstrap';
 import styled from 'styled-components';
-import '../css/FormSection.css';
+import '../../css/FormSection.css';
 
 
 class ContactSection extends Component {

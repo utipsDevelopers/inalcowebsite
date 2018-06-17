@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Grid, Row, Col,Carousel } from 'react-bootstrap';
-import prod1 from '../img/homePagelastProductsSection_img1_temporal.png';
-import prod2 from '../img/homePagelastProductsSection_img2_temporal.png';
-import prod3 from '../img/homePagelastProductsSection_img3_temporal.png';
-import prod4 from '../img/homePagelastProductsSection_img4_temporal.png';
-import '../css/MostSoldSection.css';
+import prod1 from '../../img/homePagelastProductsSection_img1_temporal.png';
+import prod2 from '../../img/homePagelastProductsSection_img2_temporal.png';
+import prod3 from '../../img/homePagelastProductsSection_img3_temporal.png';
+import prod4 from '../../img/homePagelastProductsSection_img4_temporal.png';
+import '../../css/MostSoldSection.css';
 
 const MostSoldSection = () => (
   <SuperContainer>

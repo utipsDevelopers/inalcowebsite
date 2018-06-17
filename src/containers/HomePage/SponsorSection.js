@@ -1,10 +1,10 @@
 import React from 'react';
 import { Row, Col, Grid } from 'react-bootstrap';
 import styled from 'styled-components';
-import FirestoneLogo from '../img/firestone_logo.png';
-import FuzionLogo from '../img/fuzion_logo.png';
-import BridgestoneLogo from '../img/bridgestone_logo.png';
-import '../css/SponsorSection.css';
+import FirestoneLogo from '../../img/firestone_logo.png';
+import FuzionLogo from '../../img/fuzion_logo.png';
+import BridgestoneLogo from '../../img/bridgestone_logo.png';
+import '../../css/SponsorSection.css';
 
 
 const SponsorSection = () => (

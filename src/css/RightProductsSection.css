@@ -1,0 +1,56 @@
+.parent {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .image1 {
+    position: relative;
+    top: 0;
+    left: -94px;
+    border-radius: 25px;
+    -webkit-transition: all 0.5s; /* Safari */
+    transition: all .5s;
+    opacity: 0.7;
+  }
+  
+  .image2 {
+    position: absolute;
+    top: 69px;
+    left: 134px;
+    border-radius: 25px;
+    -webkit-transition: all 0.5s; /* Safari */
+    transition: all 0.5s;
+    
+  }
+  .image1:hover{
+    -webkit-filter: grayscale(60%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(60%);
+    transform: scale(1.05);
+    }
+  .image2:hover{
+    -webkit-filter: grayscale(60%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(60%);
+    transform: scale(1.05);
+    }
+  @media screen and (max-width: 1150px) {
+   .image1{
+    width: 340px;
+    height: 380px;
+   }
+   .image2{
+    width: 340px;
+    height: 380px;
+   }
+  
+  }
+  @media screen and (max-width: 990px) {
+    .image1{
+     width: 240px;
+     height: 300px;
+    }
+    .image2{
+     width: 240px;
+     height: 300px;
+    }
+   
+   }
