@@ -19,162 +19,191 @@ import Breaksection from '../containers/ProductPage/BreaksSection';
 import SuspentionsSection from '../containers/ProductPage/SuspentionsSection';
 import ContactSection from '../containers/HomePage/ContactSection';
 import Footer from '../components/Footer';
+import LoadingScreen from 'react-loading-screen';
+import logo2 from '../img/inalcoFullLogo_white.png';
 
-const ProductPage = () => (
-  <div>
-     <SuperNavBar  collapseOnSelect fixedTop>
-    <Navbar.Header>
-        <Navbar.Brand  >
-          <AnchorLink  href='#frontsection'>
-            <Image src={logo} style={{ 
-                height: '50px',
-                width: '110px', 
-                maxWidth: '100%',
-                marginTop:"-18px",
-                marginBottom: '-10px'}}  />
-          </AnchorLink>
-        </Navbar.Brand>
-        <Navbar.Toggle />
-    </Navbar.Header>
-    <Navbar.Collapse>
-        <Nav pullRight>
-            <li className="supercss">
-              <a href="/" className="anchorcss">
-                 Inicio
-              </a>  
-            </li>
-            <NavDropdown  className="supercss" eventKey={2}  title="Productos" id="basic-nav-dropdown">
-              <MenuItem eventKey={2.1}>
-                <AnchorLink className="anchorcss" href='#b381'>
-                  <TitleNavDropdown> B 381 </TitleNavDropdown>
-                </AnchorLink>  
-              </MenuItem>
-              <MenuItem eventKey={2.2}>
-                <AnchorLink className="anchorcss" href='#f570'>
-                  <TitleNavDropdown> F 570 </TitleNavDropdown>
-                </AnchorLink> 
-              </MenuItem>
-              <MenuItem eventKey={2.3}>
-                <AnchorLink className="anchorcss" href='#f580'>
-                  <TitleNavDropdown> F 580 </TitleNavDropdown>
-                </AnchorLink>
-              </MenuItem>
-              <MenuItem eventKey={2.4}>
-                <AnchorLink className="anchorcss" href='#f590'>
-                  <TitleNavDropdown> F 590 </TitleNavDropdown>
-                </AnchorLink>
-              </MenuItem>
-              <MenuItem eventKey={2.5}>
-                <AnchorLink className="anchorcss" href='#f77'>
-                  <TitleNavDropdown> F 77 </TitleNavDropdown>
-                </AnchorLink>
-              </MenuItem>
-              <MenuItem eventKey={2.6}>
-                <AnchorLink className="anchorcss" href='#firehawk'>
-                  <TitleNavDropdown> FireHawk 700 </TitleNavDropdown>
-                </AnchorLink>
-              </MenuItem>
-              <MenuItem eventKey={2.7}>
-                <AnchorLink className="anchorcss" href='#firehawk2'>
-                  <TitleNavDropdown> FireHawk 900 </TitleNavDropdown>
-                </AnchorLink>
-              </MenuItem>
-              <MenuItem eventKey={2.8}>
-                <AnchorLink className="anchorcss" href='#winterforce'>
-                  <TitleNavDropdown> WinterForce </TitleNavDropdown>
-                </AnchorLink >
-              </MenuItem>
-              <MenuItem divider />
-              <MenuItem eventKey={2.9}>
-                <AnchorLink className="anchorcss" href='#acdelco'>
-                  <TitleNavDropdown> ACDelco </TitleNavDropdown>
-                </AnchorLink >
-              </MenuItem>
-              <MenuItem divider />
-              <MenuItem eventKey={2.10}>
-                <AnchorLink className="anchorcss" href='#frenos'>
-                    <TitleNavDropdown> Frenos </TitleNavDropdown>
-                </AnchorLink >
-              </MenuItem>
-              <MenuItem divider />
-              <MenuItem eventKey={2.11}>
-                <AnchorLink className="anchorcss" href='#suspension'>
-                  <TitleNavDropdown> Suspensión </TitleNavDropdown>
-                </AnchorLink >
-              </MenuItem>
-            </NavDropdown>
-            <SuperNavItem className="supercss" eventKey={4} href="/services">
-              Servicios
-            </SuperNavItem>
-            <SuperNavItem className="supercss" eventKey={4} href="#">
-              Cotización
-            </SuperNavItem>
-            <SuperNavItem className="supercss" eventKey={5} href="#">
-              Tips
-            </SuperNavItem>
-            <SuperNavItem className="supercss" eventKey={6} href="#">
-              Encuentra tu tienda
-            </SuperNavItem>
-            <li className="supercss">
-              <AnchorLink className="anchorcss" href='#contactsection'>
-                  Contacto
-              </AnchorLink>
-            </li>
-            
-        </Nav>
-    </Navbar.Collapse>
-    </SuperNavBar>
-    
-    
- 
-    <section >
-       <FrontProductSection />
-    </section>
-    <section >
-       <FeatureSection />
-    </section>
-    <section id="b381" >
-        <B381Section />
-    </section>
-    <section id="f570">
-      <F570Section />
-    </section>
-    <section id="f580">
-      <F580Section />
-    </section>
-    <section id="f590">
-      <F590Section />
-    </section>
-    <section id="f77">
-      <F77Section/>
-    </section>
-    <section id="firehawk">
-      <FireHawk700Section />
-    </section>
-    <section id="firehawk2">
-      <FireHawk900Section />
-    </section>
-    <section id="winterforce">
-      <WinterforceSection />
-    </section>
-    <section id="acdelco">
-      <ACDelcoSection />
-    </section>
-    <section id="frenos">
-      <Breaksection />
-    </section>
-    <section id="suspension">
-      <SuspentionsSection />
-    </section>
+class ProductPage extends React.Component {
+  constructor (props) {
+    super(props)
 
-     <section id='contactsection'>
-      <ContactSection/>
-    </section>
-    <section id='footer'>
-      <Footer />
-    </section>
-  </div>
-);
+      this.state = {
+        loading: true
+      }
+    }
+    componentDidMount () {
+      // fake promise
+      setTimeout(() =>
+        this.setState({ loading: false })
+      , 1000)
+    } render () {
+      const { loading } = this.state
+  
+      return (
+        <LoadingScreen
+        loading={loading}
+        bgColor='#e8e8e8f0'
+        spinnerColor='a0201d'
+        textColor='#676767'
+        logoSrc={logo2}
+      > 
+        
+        <div>
+          <SuperNavBar  collapseOnSelect fixedTop>
+          <Navbar.Header>
+              <Navbar.Brand  >
+                <AnchorLink  href='#frontsection'>
+                  <Image src={logo} style={{ 
+                      height: '50px',
+                      width: '110px', 
+                      maxWidth: '100%',
+                      marginTop:"-18px",
+                      marginBottom: '-10px'}}  />
+                </AnchorLink>
+              </Navbar.Brand>
+              <Navbar.Toggle />
+          </Navbar.Header>
+          <Navbar.Collapse>
+              <Nav pullRight>
+                  <li className="supercss">
+                    <a href="/" className="anchorcss">
+                      Inicio
+                    </a>  
+                  </li>
+                  <NavDropdown  className="supercss" eventKey={2}  title="Productos" id="basic-nav-dropdown">
+                    <MenuItem eventKey={2.1}>
+                      <AnchorLink className="anchorcss" href='#b381'>
+                        <TitleNavDropdown> B 381 </TitleNavDropdown>
+                      </AnchorLink>  
+                    </MenuItem>
+                    <MenuItem eventKey={2.2}>
+                      <AnchorLink className="anchorcss" href='#f570'>
+                        <TitleNavDropdown> F 570 </TitleNavDropdown>
+                      </AnchorLink> 
+                    </MenuItem>
+                    <MenuItem eventKey={2.3}>
+                      <AnchorLink className="anchorcss" href='#f580'>
+                        <TitleNavDropdown> F 580 </TitleNavDropdown>
+                      </AnchorLink>
+                    </MenuItem>
+                    <MenuItem eventKey={2.4}>
+                      <AnchorLink className="anchorcss" href='#f590'>
+                        <TitleNavDropdown> F 590 </TitleNavDropdown>
+                      </AnchorLink>
+                    </MenuItem>
+                    <MenuItem eventKey={2.5}>
+                      <AnchorLink className="anchorcss" href='#f77'>
+                        <TitleNavDropdown> F 77 </TitleNavDropdown>
+                      </AnchorLink>
+                    </MenuItem>
+                    <MenuItem eventKey={2.6}>
+                      <AnchorLink className="anchorcss" href='#firehawk'>
+                        <TitleNavDropdown> FireHawk 700 </TitleNavDropdown>
+                      </AnchorLink>
+                    </MenuItem>
+                    <MenuItem eventKey={2.7}>
+                      <AnchorLink className="anchorcss" href='#firehawk2'>
+                        <TitleNavDropdown> FireHawk 900 </TitleNavDropdown>
+                      </AnchorLink>
+                    </MenuItem>
+                    <MenuItem eventKey={2.8}>
+                      <AnchorLink className="anchorcss" href='#winterforce'>
+                        <TitleNavDropdown> WinterForce </TitleNavDropdown>
+                      </AnchorLink >
+                    </MenuItem>
+                    <MenuItem divider />
+                    <MenuItem eventKey={2.9}>
+                      <AnchorLink className="anchorcss" href='#acdelco'>
+                        <TitleNavDropdown> ACDelco </TitleNavDropdown>
+                      </AnchorLink >
+                    </MenuItem>
+                    <MenuItem divider />
+                    <MenuItem eventKey={2.10}>
+                      <AnchorLink className="anchorcss" href='#frenos'>
+                          <TitleNavDropdown> Frenos </TitleNavDropdown>
+                      </AnchorLink >
+                    </MenuItem>
+                    <MenuItem divider />
+                    <MenuItem eventKey={2.11}>
+                      <AnchorLink className="anchorcss" href='#suspension'>
+                        <TitleNavDropdown> Suspensión </TitleNavDropdown>
+                      </AnchorLink >
+                    </MenuItem>
+                  </NavDropdown>
+                  <SuperNavItem className="supercss" eventKey={4} href="/services">
+                    Servicios
+                  </SuperNavItem>
+                  <SuperNavItem className="supercss" eventKey={4} href="#">
+                    Cotización
+                  </SuperNavItem>
+                  <SuperNavItem className="supercss" eventKey={5} href="#">
+                    Tips
+                  </SuperNavItem>
+                  <SuperNavItem className="supercss" eventKey={6} href="#">
+                    Encuentra tu tienda
+                  </SuperNavItem>
+                  <li className="supercss">
+                    <AnchorLink className="anchorcss" href='#contactsection'>
+                        Contacto
+                    </AnchorLink>
+                  </li>
+                  
+              </Nav>
+          </Navbar.Collapse>
+          </SuperNavBar>
+          
+          
+      
+          <section >
+            <FrontProductSection />
+          </section>
+          <section >
+            <FeatureSection />
+          </section>
+          <section id="b381" >
+              <B381Section />
+          </section>
+          <section id="f570">
+            <F570Section />
+          </section>
+          <section id="f580">
+            <F580Section />
+          </section>
+          <section id="f590">
+            <F590Section />
+          </section>
+          <section id="f77">
+            <F77Section/>
+          </section>
+          <section id="firehawk">
+            <FireHawk700Section />
+          </section>
+          <section id="firehawk2">
+            <FireHawk900Section />
+          </section>
+          <section id="winterforce">
+            <WinterforceSection />
+          </section>
+          <section id="acdelco">
+            <ACDelcoSection />
+          </section>
+          <section id="frenos">
+            <Breaksection />
+          </section>
+          <section id="suspension">
+            <SuspentionsSection />
+          </section>
+
+          <section id='contactsection'>
+            <ContactSection/>
+          </section>
+          <section id='footer'>
+            <Footer />
+          </section>
+        </div>
+  </LoadingScreen>
+  )
+}
+};
 
 export default ProductPage;
 
