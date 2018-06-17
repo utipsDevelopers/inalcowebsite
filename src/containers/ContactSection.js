@@ -69,6 +69,7 @@ class ContactSection extends Component {
             <Row>
               <Col lg={6} >
                 <Title>Contacto</Title>
+                <br/>
                 <FormGroup>
                   <textarea className="form-group textareaForm"
                       componentClass="textarea"
@@ -80,7 +81,7 @@ class ContactSection extends Component {
               <Col lg={6} >
               <br/>
               <br/>
-              <br/>
+             
               <form className="demoForm">
                 <div >
                   <FormErrors className="errForm-message" formErrors={this.state.formErrors} />
@@ -106,6 +107,8 @@ class ContactSection extends Component {
                     value={this.state.fono}
                     onChange={this.handleUserInput}  />
                 </div>
+                <br/>
+             
                 <div className="divbutton">
                  <button type="submit" className="btn btn-primary enviarForm" disabled={!this.state.formValid}>Enviar</button>
                 </div>

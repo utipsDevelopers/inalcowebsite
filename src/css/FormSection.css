@@ -15,6 +15,7 @@
     height: 36%;
     border-radius: 11px !important;
 }
+
 .divbutton{
     text-align: left;
     margin-left: 12px !important;
@@ -36,6 +37,28 @@
     color: white !important;
     margin-left: 12px !important;
 }
+.textareaForm::placeholder {
+    color: white !important;
+    opacity: 1; /* Firefox */
+    font-size: 20px !important;
+    text-indent: 14px;
+    line-height:50px;
+}
+.textareaForm:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white !important;
+    font-size: 20px !important;
+    text-indent: 10px;
+    text-indent: 14px;
+    line-height:50px;
+ }
+ 
+ .textareaForm::-ms-input-placeholder { /* Microsoft Edge */
+    color: white !important;
+    font-size: 20px !important;
+    text-indent: 10px;
+    text-indent: 14px;
+    line-height:50px;
+ }
 ::placeholder {
     color: white !important;
     opacity: 1; /* Firefox */

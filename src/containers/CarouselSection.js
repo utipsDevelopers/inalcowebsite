@@ -9,21 +9,21 @@ const CarouselSection = () => (
   <SectionMargin>
         <Carousel >
         <Carousel.Item>
-          <img  style={{backgroundColor: "#f39c12",opacity: ".7"}} width={1400} height={500} alt="1400x500" src={img1} />
+          <img  style={{backgroundColor: "#f39c12",opacity: ".7"}} width={1500} height={500} alt="1500x500" src={img1} />
           <Carousel.Caption style={{left: "14%"}}>
             <Title1>Foto 1</Title1>
             <Description>Nulla vitae elit libero, a pharetra augue mollis interdum.</Description>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item >
-          <img style={{backgroundColor: "#f39c12",opacity: ".7"}} width={1400} height={500} alt="1400x500" src={img2} />
+          <img style={{backgroundColor: "#f39c12",opacity: ".7"}} width={1500} height={500} alt="1500x500" src={img2} />
           <Carousel.Caption style={{left: "14%"}}>
             <Title1>Foto 2</Title1>
             <Description>Nulla vitae elit libero, a pharetra augue mollis interdum.</Description>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img  style={{backgroundColor: "#f39c12",opacity: ".7"}} width={1400} height={500} alt="1400x500" src={img3} />
+          <img  style={{backgroundColor: "#f39c12",opacity: ".7"}} width={1500} height={500} alt="1500x500" src={img3} />
           <Carousel.Caption style={{left: "14%"}}>
             <Title1>Foto 3</Title1>
             <Description>Nulla vitae elit libero, a pharetra augue mollis interdum.</Description>

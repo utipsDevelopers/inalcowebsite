@@ -1,5 +1,5 @@
 .columna{
-  top: -174px;
+  top: -349px;
   
 }
 
@@ -34,17 +34,22 @@
     top: 0px;
     
   }
-  
- 
+   
 }
-
-
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   .columna{
     top: 0px;
     
   }
-  
+}
+
+@media screen and (max-width: 1000px) {
+  .columna{
+    top: 0px;
+    margin-bottom: 40px;
+    
+  }
+   
 }
 
 @media screen and (max-width: 1061px) {
@@ -52,14 +57,21 @@
     top: 0px;
     
   }
-  
 }
+
+
+
 @media screen and (max-width: 1181px) {
   .columna{
     top: 0px;
     
   }
-  
+
+}
+
+.divHidden{
+  margin-bottom: 56px;
+  text-align: center;
 }
 .appimgwrapper {
     position: sticky;

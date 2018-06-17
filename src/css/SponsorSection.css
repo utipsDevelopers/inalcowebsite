@@ -1,0 +1,8 @@
+.sponsorimg{
+    margin-bottom: 20px;
+    -webkit-transition: width 0.5s; /* Safari */
+    transition: width 0.5s;
+}
+.sponsorimg:hover{
+    width: 220px;
+}

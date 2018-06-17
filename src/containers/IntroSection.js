@@ -6,7 +6,7 @@ const IntroSection = () => (
   <SectionMargin>
     <Grid bsClass="container">
       <Row>
-        <Col lg={7} mdPush={3}>
+        <Col lg={7} md={7} mdPush={3}>
           <Title1>Lorem ipsum dolor sit amet</Title1>
           <Paragraph>
             lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut 

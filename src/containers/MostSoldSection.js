@@ -108,12 +108,12 @@ text-align: center;
 margin-top: 100px;
 margin-bottom: 80px;
 font-weight: 600;
-  @media screen and (max-width: 850px) {
-    font-size: 70px;
-  }
-  @media screen and (max-width: 800px) {
-    font-size: 50px;
-  }
+@media screen and (max-width: 850px) {
+  font-size: 70px;
+}
+@media screen and (max-width: 800px) {
+  font-size: 50px;
+}
 `;
 
 

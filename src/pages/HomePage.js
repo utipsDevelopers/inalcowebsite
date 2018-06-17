@@ -6,6 +6,7 @@ import logo from '../img/inalcoSummarizedLogo_black.png';
 import '../css/Navbar.css';
 import FrontSection from '../containers/FrontSection';
 import IntroSection from '../containers/IntroSection';
+import SponsorSection from '../containers/SponsorSection';
 import CarouselSection from '../containers/CarouselSection';
 import ProductsandServicesSection from '../containers/ProductsandServicesSection';
 import LastProductsSection from '../containers/LastProductsSection';
@@ -22,7 +23,7 @@ const HomePage = () => (
           <AnchorLink  href='#frontsection'>
             <Image src={logo} style={{ 
                 height: '50px',
-                width: '128px', 
+                width: '110px', 
                 maxWidth: '100%',
                 marginTop:"-18px",
                 marginBottom: '-10px'}}  />
@@ -85,6 +86,9 @@ const HomePage = () => (
     </section>
     <section id='introsection'>
       <IntroSection />
+    </section>
+    <section id='sponsorsection'>
+      <SponsorSection />
     </section>
     <section id='carouselsection'>
       <CarouselSection />
