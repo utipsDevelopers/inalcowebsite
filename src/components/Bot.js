@@ -7,10 +7,10 @@ import ApiConection from "./ApiConection";
 const theme = {
   background: "#f5f8fb",
   fontFamily: "Helvetica Neue",
-  headerBgColor: "#ff3333",
+  headerBgColor: "#e60000",
   headerFontColor: "#fff",
   headerFontSize: "15px",
-  botBubbleColor: "#ff3333",
+  botBubbleColor: "#e60000",
   botFontColor: "#fff",
   userBubbleColor: "#fff",
   userFontColor: "#4a4a4a"

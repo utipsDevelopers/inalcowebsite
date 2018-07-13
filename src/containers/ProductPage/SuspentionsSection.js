@@ -1,11 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
-import { Grid, Row, Col } from 'react-bootstrap';
-import img1 from '../../img/suspensions1.jpg';
-import img2 from '../../img/suspensions2.jpg';
-import '../../css/RightProductsSection.css';
-
-
+import React from "react";
+import styled from "styled-components";
+import { Grid, Row, Col } from "react-bootstrap";
+import img1 from "../../img/suspensions1.jpg";
+import img2 from "../../img/suspensions2.jpg";
+import "../../css/RightProductsSection.css";
 
 const SuspentionsSection = () => (
   <SuperContainer>
@@ -13,26 +11,34 @@ const SuspentionsSection = () => (
       <Row className="show-grid">
         <Col lg={6} md={6} sm={6} xsHidden>
           <div class="parent">
-            <img src={img2} width="380px" height="450px" className="image1"  />
-            <img src={img1} width="400px" height="450px" className="image2"  />
+            <img
+              src={img2}
+              width="380px"
+              height="450px"
+              className="image1"
+              alt=""
+            />
+            <img
+              src={img1}
+              width="400px"
+              height="450px"
+              className="image2"
+              alt=""
+            />
           </div>
         </Col>
-        <Col lg={6} md={6} sm={6} xs={12} >
+        <Col lg={6} md={6} sm={6} xs={12}>
           <Title1>Suspensi&oacute;n </Title1>
-          <br/> 
-          <br/> 
+          <br />
+          <br />
           <div className="contenedordiv">
             <Paragraph>
-              Lorem ipsum dolor sit amet
-              consectetur adipiscing elit
-              bibendum neque dictum
-              lobortis ridiculus lectus, non
-              porta quis vehicula tempor leo
-              pulvinar magna elementum
+              Lorem ipsum dolor sit amet consectetur adipiscing elit bibendum
+              neque dictum lobortis ridiculus lectus, non porta quis vehicula
+              tempor leo pulvinar magna elementum
             </Paragraph>
           </div>
         </Col>
-        
       </Row>
     </Grid>
   </SuperContainer>
@@ -46,8 +52,6 @@ const SuperContainer = styled.header`
   padding-top: 146px;
   padding-bottom: 200px;
   background: #f5f5f5;
-  
-
 `;
 const Paragraph = styled.p`
   font-size: 26px;
@@ -72,12 +76,11 @@ const Title1 = styled.h2`
   @media screen and (max-width: 1170px) {
     margin-left: 0px;
   }
-  
+
   @media screen and (max-width: 990px) {
     font-size: 60px;
     margin-left: 0px;
   }
-  
 
   @media screen and (max-width: 850px) {
     font-size: 60px;
@@ -87,4 +90,3 @@ const Title1 = styled.h2`
     font-size: 50px;
   }
 `;
-

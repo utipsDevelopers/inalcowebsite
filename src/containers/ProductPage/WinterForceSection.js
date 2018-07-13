@@ -1,39 +1,44 @@
-import React from 'react';
-import styled from 'styled-components';
-import { Grid, Row, Col } from 'react-bootstrap';
-import img1 from '../../img/homePage_servicesSection_img3_temporal.png';
-import img2 from '../../img/homePage_servicesSection_img1_temporal.png';
-import '../../css/LeftProductsSection.css';
-
-
+import React from "react";
+import styled from "styled-components";
+import { Grid, Row, Col } from "react-bootstrap";
+import img1 from "../../img/homePage_servicesSection_img3_temporal.png";
+import img2 from "../../img/homePage_servicesSection_img1_temporal.png";
+import "../../css/LeftProductsSection.css";
 
 const WinterforceSection = () => (
   <SuperContainer>
     <Grid bsClass="container">
       <Row className="show-grid">
-       
-        <Col lg={6} md={6} sm={6} xs={12} >
+        <Col lg={6} md={6} sm={6} xs={12}>
           <Title1>Winterforce </Title1>
-          <br/> 
-          <br/> 
+          <br />
+          <br />
           <div className="contenedordiv">
             <Paragraph>
-              Lorem ipsum dolor sit amet
-              consectetur adipiscing elit
-              bibendum neque dictum
-              lobortis ridiculus lectus, non
-              porta quis vehicula tempor leo
-              pulvinar magna elementum
+              Lorem ipsum dolor sit amet consectetur adipiscing elit bibendum
+              neque dictum lobortis ridiculus lectus, non porta quis vehicula
+              tempor leo pulvinar magna elementum
             </Paragraph>
           </div>
         </Col>
         <Col lg={6} md={6} sm={6} xsHidden>
           <div class="parent">
-            <img src={img2} width="380px" height="450px" className="image1570"  />
-            <img src={img1} width="400px" height="450px" className="image2570"  />
+            <img
+              src={img2}
+              width="380px"
+              height="450px"
+              className="image1570"
+              alt=""
+            />
+            <img
+              src={img1}
+              width="400px"
+              height="450px"
+              className="image2570"
+              alt=""
+            />
           </div>
         </Col>
-        
       </Row>
     </Grid>
   </SuperContainer>
@@ -46,8 +51,6 @@ const SuperContainer = styled.header`
   width: 102.05%;
   padding-top: 146px;
   padding-bottom: 200px;
-  
-
 `;
 const Paragraph = styled.p`
   font-size: 26px;
@@ -73,7 +76,6 @@ const Title1 = styled.h2`
     font-size: 60px;
     margin-right: 0px;
   }
-  
 
   @media screen and (max-width: 850px) {
     font-size: 60px;
@@ -83,4 +85,3 @@ const Title1 = styled.h2`
     font-size: 50px;
   }
 `;
-

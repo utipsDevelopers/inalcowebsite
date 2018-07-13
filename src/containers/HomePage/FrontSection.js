@@ -1,8 +1,7 @@
-import React from 'react';
-import styled from 'styled-components';
-import { Grid, Row, Col } from 'react-bootstrap';
-import img from '../../img/homePage_introWallpaper_definitive.jpg';
-
+import React from "react";
+import styled from "styled-components";
+import { Grid, Row, Col } from "react-bootstrap";
+import img from "../../img/homePage_introWallpaper_definitive.jpg";
 
 const FrontSection = () => (
   <SuperContainer>
@@ -14,7 +13,6 @@ const FrontSection = () => (
             <Title2>Lorem ipsum dolor sit amet, consectetur adipiscing</Title2>
           </FrontContent>
         </Col>
-        
       </Row>
     </Grid>
   </SuperContainer>
@@ -28,10 +26,9 @@ const SuperContainer = styled.header`
   padding-top: 150px;
   padding-bottom: 400px;
   color: white;
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkiAQAAF8AW+qFhiYAAAAASUVORK5CYII=),url(${img});
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkiAQAAF8AW+qFhiYAAAAASUVORK5CYII=),
+    url(${img});
   background-size: cover;
-  
-
 `;
 const FrontContent = styled.div`
   max-width: 500px;

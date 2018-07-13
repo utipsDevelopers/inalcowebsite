@@ -1,40 +1,61 @@
-import React from 'react';
-import { Carousel } from 'react-bootstrap';
-import styled from 'styled-components';
-import img1 from '../../img/caru1.jpg';
-import img2 from '../../img/caru2.jpg';
-import img3 from '../../img/caru3.jpg';
+import React from "react";
+import { Carousel } from "react-bootstrap";
+import styled from "styled-components";
+import img1 from "../../img/caru1.jpg";
+import img2 from "../../img/caru2.jpg";
+import img3 from "../../img/caru3.jpg";
 
 const CarouselSection = () => (
   <SectionMargin>
-        <Carousel >
-        <Carousel.Item>
-          <img  style={{backgroundColor: "#f39c12",opacity: ".7"}} width={1500} height={500} alt="1500x500" src={img1} />
-          <Carousel.Caption style={{left: "14%"}}>
-            <Title1>Foto 1</Title1>
-            <Description>Nulla vitae elit libero, a pharetra augue mollis interdum.</Description>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item >
-          <img style={{backgroundColor: "#f39c12",opacity: ".7"}} width={1500} height={500} alt="1500x500" src={img2} />
-          <Carousel.Caption style={{left: "14%"}}>
-            <Title1>Foto 2</Title1>
-            <Description>Nulla vitae elit libero, a pharetra augue mollis interdum.</Description>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img  style={{backgroundColor: "#f39c12",opacity: ".7"}} width={1500} height={500} alt="1500x500" src={img3} />
-          <Carousel.Caption style={{left: "14%"}}>
-            <Title1>Foto 3</Title1>
-            <Description>Nulla vitae elit libero, a pharetra augue mollis interdum.</Description>
-          </Carousel.Caption>
-        </Carousel.Item>
-      </Carousel>
-
+    <Carousel>
+      <Carousel.Item>
+        <img
+          style={{ backgroundColor: "#f39c12", opacity: ".7" }}
+          width={1500}
+          height={500}
+          alt="1500x500"
+          src={img1}
+        />
+        <Carousel.Caption style={{ left: "14%" }}>
+          <Title1>Foto 1</Title1>
+          <Description>
+            Nulla vitae elit libero, a pharetra augue mollis interdum.
+          </Description>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          style={{ backgroundColor: "#f39c12", opacity: ".7" }}
+          width={1500}
+          height={500}
+          alt="1500x500"
+          src={img2}
+        />
+        <Carousel.Caption style={{ left: "14%" }}>
+          <Title1>Foto 2</Title1>
+          <Description>
+            Nulla vitae elit libero, a pharetra augue mollis interdum.
+          </Description>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          style={{ backgroundColor: "#f39c12", opacity: ".7" }}
+          width={1500}
+          height={500}
+          alt="1500x500"
+          src={img3}
+        />
+        <Carousel.Caption style={{ left: "14%" }}>
+          <Title1>Foto 3</Title1>
+          <Description>
+            Nulla vitae elit libero, a pharetra augue mollis interdum.
+          </Description>
+        </Carousel.Caption>
+      </Carousel.Item>
+    </Carousel>
   </SectionMargin>
 );
-
-
 
 export default CarouselSection;
 
@@ -50,7 +71,7 @@ const Title1 = styled.h2`
   color: #fff;
   font-weight: 400;
   @media screen and (max-width: 850px) {
-    font-size: 8  0px;
+    font-size: 8 0px;
   }
   @media screen and (max-width: 800px) {
     font-size: 50px;
@@ -77,4 +98,3 @@ const Description = styled.p`
     width: 80%;
   }
 `;
-
