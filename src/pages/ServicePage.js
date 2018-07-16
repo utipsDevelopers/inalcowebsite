@@ -9,7 +9,7 @@ import {
   MenuItem,
   Image
 } from "react-bootstrap";
-import logo from "../img/inalcoSummarizedLogo_black.png";
+import logo from "../img/Logo-carservice-2018-blanco.jpg";
 import "../css/Navbar.css";
 import FrontServiceSection from "../containers/ServicePage/FrontServiceSection";
 import FeatureSection from "../containers/ServicePage/FeautreSection";
@@ -20,7 +20,7 @@ import MaintenanceSection from "../containers/ServicePage/MaintenanceSection";
 import ContactSection from "../containers/HomePage/ContactSection";
 import Footer from "../components/Footer";
 import LoadingScreen from "react-loading-screen";
-import logo2 from "../img/inalcoFullLogo_white.png";
+import logo2 from "../img/Logo-carservice-2018.png";
 
 class ServicePage extends React.Component {
   constructor(props) {
@@ -32,7 +32,7 @@ class ServicePage extends React.Component {
   }
   componentDidMount() {
     // fake promise
-    setTimeout(() => this.setState({ loading: false }), 1000);
+    setTimeout(() => this.setState({ loading: false }), 1500);
   }
   render() {
     const { loading } = this.state;
@@ -40,7 +40,7 @@ class ServicePage extends React.Component {
     return (
       <LoadingScreen
         loading={loading}
-        bgColor="#e8e8e8f0"
+        bgColor="#fff"
         spinnerColor="a0201d"
         textColor="#676767"
         logoSrc={logo2}
@@ -71,13 +71,49 @@ class ServicePage extends React.Component {
                     Inicio
                   </a>
                 </li>
-                <SuperNavItem
+                <NavDropdown
                   className="supercss"
-                  eventKey={4}
-                  href="/products"
+                  eventKey={2}
+                  title="Productos"
+                  id="basic-nav-dropdown"
                 >
-                  Productos
-                </SuperNavItem>
+                  <MenuItem eventKey={2.1} className="anchorcss" href="/products">
+                      <TitleNavDropdown> B 381 </TitleNavDropdown>
+                  </MenuItem>
+                  <MenuItem eventKey={2.2}  className="anchorcss" href="/products">
+                      <TitleNavDropdown> F 570 </TitleNavDropdown>
+                  </MenuItem>
+                  <MenuItem eventKey={2.3}  className="anchorcss" href="/products">
+                      <TitleNavDropdown> F 580 </TitleNavDropdown>
+                  </MenuItem>
+                  <MenuItem eventKey={2.4}  className="anchorcss" href="/products">
+                      <TitleNavDropdown> F 590 </TitleNavDropdown>
+                  </MenuItem>
+                  <MenuItem eventKey={2.5}  className="anchorcss" href="/products">
+                      <TitleNavDropdown> F 77 </TitleNavDropdown>
+                  </MenuItem>
+                  <MenuItem eventKey={2.6}  className="anchorcss" href="/products">
+                      <TitleNavDropdown> FireHawk 700 </TitleNavDropdown>
+                  </MenuItem>
+                  <MenuItem eventKey={2.7}  className="anchorcss" href="/products">
+                      <TitleNavDropdown> FireHawk 900 </TitleNavDropdown>
+                  </MenuItem>
+                  <MenuItem eventKey={2.8}  className="anchorcss" href="/products">
+                      <TitleNavDropdown> WinterForce </TitleNavDropdown>
+                  </MenuItem>
+                  <MenuItem divider />
+                  <MenuItem eventKey={2.9}  className="anchorcss" href="/products">
+                      <TitleNavDropdown> ACDelco </TitleNavDropdown>
+                  </MenuItem>
+                  <MenuItem divider />
+                  <MenuItem eventKey={2.10}  className="anchorcss" href="/products">
+                      <TitleNavDropdown> Frenos </TitleNavDropdown>
+                  </MenuItem>
+                  <MenuItem divider />
+                  <MenuItem eventKey={2.11}  className="anchorcss" href="/products">
+                      <TitleNavDropdown> Suspensión </TitleNavDropdown>
+                  </MenuItem>
+                </NavDropdown>
                 <NavDropdown
                   className="supercss"
                   eventKey={2}

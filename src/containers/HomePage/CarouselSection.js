@@ -11,9 +11,9 @@ const CarouselSection = () => (
       <Carousel.Item>
         <img
           style={{ backgroundColor: "#f39c12", opacity: ".7" }}
-          width={1500}
+          width={1600}
           height={500}
-          alt="1500x500"
+          alt="1600x500"
           src={img1}
         />
         <Carousel.Caption style={{ left: "14%" }}>
@@ -26,9 +26,9 @@ const CarouselSection = () => (
       <Carousel.Item>
         <img
           style={{ backgroundColor: "#f39c12", opacity: ".7" }}
-          width={1500}
+          width={1600}
           height={500}
-          alt="1500x500"
+          alt="1600x500"
           src={img2}
         />
         <Carousel.Caption style={{ left: "14%" }}>
@@ -41,7 +41,7 @@ const CarouselSection = () => (
       <Carousel.Item>
         <img
           style={{ backgroundColor: "#f39c12", opacity: ".7" }}
-          width={1500}
+          width={1600}
           height={500}
           alt="1500x500"
           src={img3}

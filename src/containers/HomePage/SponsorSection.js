@@ -11,7 +11,7 @@ const SponsorSection = () => (
     <Grid bsClass="container">
       <Row>
         <Col lg={4} md={4} sm={4}>
-          <a href="https://www.bridgestone.cl/es" rel="noopener">
+          <a href="https://www.bridgestone.cl/es" rel="noopener noreferrer"  target="_blank" >
             <img
               className="sponsorimg"
               src={BridgestoneLogo}
@@ -23,7 +23,7 @@ const SponsorSection = () => (
         </Col>
 
         <Col lg={4} md={4} sm={4}>
-          <a href="https://www.firestone.cl/es" rel="noopener">
+          <a href="https://www.firestone.cl/es" rel="noopener noreferrer" target="_blank" >
             <img
               className="sponsorimg"
               src={FirestoneLogo}

@@ -7,9 +7,14 @@
 }
 .supercss a{
     color: white !important;
-    font-size: 10px !important;
+    font-size: 13px !important;
+    font-weight: normal !important;
 }
 .dropdown a{
+    color: white !important;
+}
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover{
+    background-color:#a0201d !important; 
     color: white !important;
 }
 .dropdown-menu>li>a:hover{

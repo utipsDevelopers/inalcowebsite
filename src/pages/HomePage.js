@@ -1,8 +1,8 @@
 import React from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import styled from "styled-components";
-import { Navbar, Nav, NavItem, Image } from "react-bootstrap";
-import logo from "../img/inalcoSummarizedLogo_black.png";
+import { Navbar, Nav, NavItem, Image,MenuItem, NavDropdown } from "react-bootstrap";
+import logo from "../img/Logo-carservice-2018-blanco.jpg";
 import "../css/Navbar.css";
 import FrontSection from "../containers/HomePage/FrontSection";
 import IntroSection from "../containers/HomePage/IntroSection";
@@ -14,7 +14,7 @@ import MostSoldSection from "../containers/HomePage/MostSoldSection";
 import ContactSection from "../containers/HomePage/ContactSection";
 import Footer from "../components/Footer";
 import LoadingScreen from "react-loading-screen";
-import logo2 from "../img/inalcoFullLogo_white.png";
+import logo2 from "../img/Logo-carservice-2018.png";
 
 class HomePage extends React.Component {
   constructor(props) {
@@ -26,7 +26,7 @@ class HomePage extends React.Component {
   }
   componentDidMount() {
     // fake promise
-    setTimeout(() => this.setState({ loading: false }), 1000);
+    setTimeout(() => this.setState({ loading: false }), 1500);
   }
   render() {
     const { loading } = this.state;
@@ -34,7 +34,7 @@ class HomePage extends React.Component {
     return (
       <LoadingScreen
         loading={loading}
-        bgColor="#e8e8e8f0"
+        bgColor="#fff"
         spinnerColor="a0201d"
         textColor="#676767"
         logoSrc={logo2}
@@ -61,25 +61,75 @@ class HomePage extends React.Component {
             <Navbar.Collapse>
               <Nav pullRight>
                 <li className="supercss">
-                  <AnchorLink className="anchorcss" href="#frontsection">
+                  <AnchorLink className="anchorcss" href="#frontsection" autofocus>
                     Inicio
                   </AnchorLink>
                 </li>
-                <SuperNavItem
+                <NavDropdown
                   className="supercss"
                   eventKey={2}
-                  href="/products"
+                  title="Productos"
+                  id="basic-nav-dropdown"
                 >
-                  Productos
-                </SuperNavItem>
+                  <MenuItem eventKey={2.1} className="anchorcss" href="/products">
+                      <TitleNavDropdown> B 381 </TitleNavDropdown>
+                  </MenuItem>
+                  <MenuItem eventKey={2.2}  className="anchorcss" href="/products">
+                      <TitleNavDropdown> F 570 </TitleNavDropdown>
+                  </MenuItem>
+                  <MenuItem eventKey={2.3}  className="anchorcss" href="/products">
+                      <TitleNavDropdown> F 580 </TitleNavDropdown>
+                  </MenuItem>
+                  <MenuItem eventKey={2.4}  className="anchorcss" href="/products">
+                      <TitleNavDropdown> F 590 </TitleNavDropdown>
+                  </MenuItem>
+                  <MenuItem eventKey={2.5}  className="anchorcss" href="/products">
+                      <TitleNavDropdown> F 77 </TitleNavDropdown>
+                  </MenuItem>
+                  <MenuItem eventKey={2.6}  className="anchorcss" href="/products">
+                      <TitleNavDropdown> FireHawk 700 </TitleNavDropdown>
+                  </MenuItem>
+                  <MenuItem eventKey={2.7}  className="anchorcss" href="/products">
+                      <TitleNavDropdown> FireHawk 900 </TitleNavDropdown>
+                  </MenuItem>
+                  <MenuItem eventKey={2.8}  className="anchorcss" href="/products">
+                      <TitleNavDropdown> WinterForce </TitleNavDropdown>
+                  </MenuItem>
+                  <MenuItem divider />
+                  <MenuItem eventKey={2.9}  className="anchorcss" href="/products">
+                      <TitleNavDropdown> ACDelco </TitleNavDropdown>
+                  </MenuItem>
+                  <MenuItem divider />
+                  <MenuItem eventKey={2.10}  className="anchorcss" href="/products">
+                      <TitleNavDropdown> Frenos </TitleNavDropdown>
+                  </MenuItem>
+                  <MenuItem divider />
+                  <MenuItem eventKey={2.11}  className="anchorcss" href="/products">
+                      <TitleNavDropdown> Suspensión </TitleNavDropdown>
+                  </MenuItem>
+                </NavDropdown>
 
-                <SuperNavItem
+                <NavDropdown
                   className="supercss"
-                  eventKey={3}
-                  href="/services"
+                  eventKey={2}
+                  title="Servicios"
+                  id="basic-nav-dropdown"
                 >
-                  Servicios
-                </SuperNavItem>
+                  <MenuItem eventKey={2.1} className="anchorcss" href="/services">
+                      <TitleNavDropdown>
+                        {" "}
+                        Alineaci&oacute;n y balanceo{" "}
+                      </TitleNavDropdown>
+                  </MenuItem>
+                  <MenuItem divider />
+                  <MenuItem eventKey={2.2} className="anchorcss" href="/services">
+                      <TitleNavDropdown> Cambio de Aceite </TitleNavDropdown>
+                  </MenuItem>
+                  <MenuItem divider />
+                  <MenuItem eventKey={2.3} className="anchorcss" href="/services">
+                      <TitleNavDropdown> Mantenci&oacute;n </TitleNavDropdown>
+                  </MenuItem>
+                </NavDropdown>
                 <SuperNavItem className="supercss" eventKey={4} href="#">
                   Cotización
                 </SuperNavItem>
@@ -137,5 +187,11 @@ const SuperNavBar = styled(Navbar)`
 `;
 const SuperNavItem = styled(NavItem)`
   color: white;
-  font-size: 40px;
+  font-size: 50px;
+`;
+const TitleNavDropdown = styled.p`
+  font-weight: 100;
+  letter-spacing: 2px;
+  font-size: 12px;
+  text-transform: capitalize;
 `;

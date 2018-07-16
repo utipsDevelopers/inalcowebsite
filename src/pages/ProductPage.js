@@ -9,7 +9,7 @@ import {
   MenuItem,
   Image
 } from "react-bootstrap";
-import logo from "../img/inalcoSummarizedLogo_black.png";
+import logo from "../img/Logo-carservice-2018-blanco.jpg";
 import "../css/Navbar.css";
 import FrontProductSection from "../containers/ProductPage/FrontProductSection";
 import FeatureSection from "../containers/ProductPage/FeautreSection";
@@ -27,7 +27,7 @@ import SuspentionsSection from "../containers/ProductPage/SuspentionsSection";
 import ContactSection from "../containers/HomePage/ContactSection";
 import Footer from "../components/Footer";
 import LoadingScreen from "react-loading-screen";
-import logo2 from "../img/inalcoFullLogo_white.png";
+import logo2 from "../img/Logo-carservice-2018.png";
 
 class ProductPage extends React.Component {
   constructor(props) {
@@ -39,7 +39,7 @@ class ProductPage extends React.Component {
   }
   componentDidMount() {
     // fake promise
-    setTimeout(() => this.setState({ loading: false }), 1000);
+    setTimeout(() => this.setState({ loading: false }), 1500);
   }
   render() {
     const { loading } = this.state;
@@ -47,7 +47,7 @@ class ProductPage extends React.Component {
     return (
       <LoadingScreen
         loading={loading}
-        bgColor="#e8e8e8f0"
+        bgColor="#fff"
         spinnerColor="a0201d"
         textColor="#676767"
         logoSrc={logo2}
@@ -143,13 +143,27 @@ class ProductPage extends React.Component {
                     </AnchorLink>
                   </MenuItem>
                 </NavDropdown>
-                <SuperNavItem
+                <NavDropdown
                   className="supercss"
-                  eventKey={4}
-                  href="/services"
+                  eventKey={2}
+                  title="Servicios"
+                  id="basic-nav-dropdown"
                 >
-                  Servicios
-                </SuperNavItem>
+                  <MenuItem eventKey={2.1} className="anchorcss" href="/services">
+                      <TitleNavDropdown>
+                        {" "}
+                        Alineaci&oacute;n y balanceo{" "}
+                      </TitleNavDropdown>
+                  </MenuItem>
+                  <MenuItem divider />
+                  <MenuItem eventKey={2.2} className="anchorcss" href="/services">
+                      <TitleNavDropdown> Cambio de Aceite </TitleNavDropdown>
+                  </MenuItem>
+                  <MenuItem divider />
+                  <MenuItem eventKey={2.3} className="anchorcss" href="/services">
+                      <TitleNavDropdown> Mantenci&oacute;n </TitleNavDropdown>
+                  </MenuItem>
+                </NavDropdown>
                 <SuperNavItem className="supercss" eventKey={4} href="#">
                   Cotización
                 </SuperNavItem>

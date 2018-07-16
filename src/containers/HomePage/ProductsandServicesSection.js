@@ -111,7 +111,11 @@ const ProductsandServicesSection = () => (
               </div>
             </a>
           </div>
+          <Title xsHidden smHidden>
+            Nuestros productos y servicios
+          </Title>
         </Col>
+        
         <Col lg={6} md={6} sm={6}>
           <div className="appimgwrapper">
             <a className="appimglink">
@@ -139,7 +143,7 @@ export default ProductsandServicesSection;
 const SectionMargin = styled.section`
   position: relative;
   padding-top: 220px;
-  padding-bottom: 175px;
+  padding-bottom: 105px;
   text-align: left;
   width: 102.05%;
   background-color: #ffffff;
@@ -194,3 +198,4 @@ const Title = styled.h1`
     display: none;
   }
 `;
+
