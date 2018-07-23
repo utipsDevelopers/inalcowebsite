@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { FormErrors } from "./FormErrors";
 import { Grid, Row, Col, FormGroup } from "react-bootstrap";
 import styled from "styled-components";
+import Fade from 'react-reveal/Fade';
+import Flip from 'react-reveal/Flip';
 import "../../css/FormSection.css";
 
 class ContactSection extends Component {
@@ -79,83 +81,88 @@ class ContactSection extends Component {
         <Grid bsClass="container">
           <Row>
             <Col lg={6}>
-              <Title>Contacto</Title>
+              <Fade left>
+                <Title>Contacto</Title>
+              </Fade>
               <br />
-              <FormGroup>
-                <textarea
-                  className="form-group textareaForm"
-                  componentClass="textarea"
-                  placeholder="Tu Mensaje"
-                />
-              </FormGroup>
+              <Flip top cascade>
+                <FormGroup>
+                  <textarea
+                    className="form-group textareaForm"
+                    componentClass="textarea"
+                    placeholder="Tu Mensaje"
+                  />
+                </FormGroup>
+              </Flip>
             </Col>
             <Col lg={6}>
               <br />
               <br />
-
-              <form className="demoForm">
-                <div>
-                  <FormErrors
-                    className="errForm-message"
-                    formErrors={this.state.formErrors}
-                  />
-                </div>
-                <div
-                  className={`form-group ${this.errorClass(
-                    this.state.formErrors.nombre
-                  )}`}
-                >
-                  <input
-                    type="text"
-                    required
-                    className="form-control inputForm"
-                    name="nombre"
-                    placeholder="Tu Nombre"
-                    value={this.state.nombre}
-                    onChange={this.handleUserInput}
-                  />
-                </div>
-                <div
-                  className={`form-group ${this.errorClass(
-                    this.state.formErrors.email
-                  )}`}
-                >
-                  <input
-                    type="email"
-                    required
-                    className="form-control inputForm"
-                    name="email"
-                    placeholder="Tu Email"
-                    value={this.state.email}
-                    onChange={this.handleUserInput}
-                  />
-                </div>
-                <div
-                  className={`form-group ${this.errorClass(
-                    this.state.formErrors.fono
-                  )}`}
-                >
-                  <input
-                    type="text"
-                    className="form-control inputForm"
-                    name="fono"
-                    placeholder="Tu Telefono"
-                    value={this.state.fono}
-                    onChange={this.handleUserInput}
-                  />
-                </div>
-                <br />
-
-                <div className="divbutton">
-                  <button
-                    type="submit"
-                    className="btn btn-primary enviarForm"
-                    disabled={!this.state.formValid}
+              <Flip top cascade>
+                <form className="demoForm">
+                  <div>
+                    <FormErrors
+                      className="errForm-message"
+                      formErrors={this.state.formErrors}
+                    />
+                  </div>
+                  <div
+                    className={`form-group ${this.errorClass(
+                      this.state.formErrors.nombre
+                    )}`}
                   >
-                    Enviar
-                  </button>
-                </div>
-              </form>
+                    <input
+                      type="text"
+                      required
+                      className="form-control inputForm"
+                      name="nombre"
+                      placeholder="Tu Nombre"
+                      value={this.state.nombre}
+                      onChange={this.handleUserInput}
+                    />
+                  </div>
+                  <div
+                    className={`form-group ${this.errorClass(
+                      this.state.formErrors.email
+                    )}`}
+                  >
+                    <input
+                      type="email"
+                      required
+                      className="form-control inputForm"
+                      name="email"
+                      placeholder="Tu Email"
+                      value={this.state.email}
+                      onChange={this.handleUserInput}
+                    />
+                  </div>
+                  <div
+                    className={`form-group ${this.errorClass(
+                      this.state.formErrors.fono
+                    )}`}
+                  >
+                    <input
+                      type="text"
+                      className="form-control inputForm"
+                      name="fono"
+                      placeholder="Tu Telefono"
+                      value={this.state.fono}
+                      onChange={this.handleUserInput}
+                    />
+                  </div>
+                  <br />
+
+                  <div className="divbutton">
+                    <button
+                      type="submit"
+                      className="btn btn-primary enviarForm"
+                      disabled={!this.state.formValid}
+                    >
+                      Enviar
+                    </button>
+                  </div>
+                </form>
+              </Flip>
             </Col>
           </Row>
         </Grid>

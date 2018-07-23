@@ -1,6 +1,7 @@
 import React from "react";
 import { Row, Col, Grid } from "react-bootstrap";
 import styled from "styled-components";
+import Zoom from 'react-reveal/Zoom';
 import FirestoneLogo from "../../img/firestone_logo.png";
 import FuzionLogo from "../../img/fuzion_logo.png";
 import BridgestoneLogo from "../../img/bridgestone_logo.png";
@@ -11,39 +12,45 @@ const SponsorSection = () => (
     <Grid bsClass="container">
       <Row>
         <Col lg={4} md={4} sm={4}>
-          <a href="https://www.bridgestone.cl/es" rel="noopener noreferrer"  target="_blank" >
-            <img
-              className="sponsorimg"
-              src={BridgestoneLogo}
-              alt="Bridgestone"
-              width="200px"
-              height="60px"
-            />
-          </a>
+          <Zoom cascade>
+            <a href="https://www.bridgestone.cl/es" rel="noopener noreferrer"  target="_blank" >
+              <img
+                className="sponsorimg"
+                src={BridgestoneLogo}
+                alt="Bridgestone"
+                width="200px"
+                height="60px"
+              />
+            </a>
+          </Zoom>
         </Col>
 
         <Col lg={4} md={4} sm={4}>
-          <a href="https://www.firestone.cl/es" rel="noopener noreferrer" target="_blank" >
-            <img
-              className="sponsorimg"
-              src={FirestoneLogo}
-              alt="Firestone"
-              width="250px"
-              height="60px"
-            />
-          </a>
+          <Zoom cascade>
+            <a href="https://www.firestone.cl/es" rel="noopener noreferrer" target="_blank" >
+              <img
+                className="sponsorimg"
+                src={FirestoneLogo}
+                alt="Firestone"
+                width="250px"
+                height="60px"
+              />
+            </a>
+          </Zoom>  
         </Col>
 
         <Col lg={4} md={4} sm={4}>
-          <a rel="noopener">
-            <img
-              className="sponsorimg"
-              src={FuzionLogo}
-              alt="Fuzion"
-              width="200px"
-              height="60px"
-            />
-          </a>
+          <Zoom cascade>
+            <a rel="noopener">
+              <img
+                className="sponsorimg"
+                src={FuzionLogo}
+                alt="Fuzion"
+                width="200px"
+                height="60px"
+              />
+            </a>
+          </Zoom>
         </Col>
       </Row>
     </Grid>

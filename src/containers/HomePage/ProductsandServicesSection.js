@@ -1,6 +1,8 @@
 import React from "react";
 import { Grid, Row, Col } from "react-bootstrap";
 import styled from "styled-components";
+import Fade from 'react-reveal/Fade';
+import Flip from 'react-reveal/Flip';
 import wheel from "../../img/homePage_servicesSection_img1_temporal.png";
 import battery from "../../img/homePage_servicesSection_img3_temporal.png";
 import balance from "../../img/homePage_servicesSection_img2_temporal.png";
@@ -14,124 +16,142 @@ const ProductsandServicesSection = () => (
     <Grid bsClass="container">
       <Row>
         <div className="divHidden">
-          <TitleHidden>Nuestros productos y servicios</TitleHidden>
+          <Flip bottom>
+            <TitleHidden>Nuestros productos y servicios</TitleHidden>
+          </Flip>
         </div>
         <Col lg={6} md={6} sm={6}>
-          <div className="appimgwrapper">
-            <a className="appimglink">
-              <img
-                src={wheel}
-                width="480px"
-                height="550px"
-                className="img-responsive appimg"
-                alt="App"
-              />
-              <div className="appimgtext">
-                <h2 className="apptitle">Neum&aacute;ticos</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-              </div>
-            </a>
-          </div>
+          <Fade left>
+            <div className="appimgwrapper">
+              <a className="appimglink">
+                <img
+                  src={wheel}
+                  width="480px"
+                  height="550px"
+                  className="img-responsive appimg"
+                  alt="App"
+                />
+                <div className="appimgtext">
+                  <h2 className="apptitle">Neum&aacute;ticos</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                </div>
+              </a>
+            </div>
+          </Fade>
         </Col>
         <Col lg={6} md={6} sm={6}>
-          <Title xsHidden smHidden>
-            Nuestros productos y servicios
-          </Title>
+          <Flip bottom>
+            <Title xsHidden smHidden>
+              Nuestros productos y servicios
+            </Title>
+          </Flip>
           <br />
-          <div className="appimgwrapper">
-            <a className="appimglink">
-              <img
-                src={battery}
-                width="480px"
-                height="250px"
-                className="img-responsive appimg"
-                alt="App"
-              />
-              <div className="appimgtext">
-                <h2 className="apptitle">Bater&iacute;as</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-              </div>
-            </a>
-          </div>
+          <Fade right>
+            <div className="appimgwrapper">
+              <a className="appimglink">
+                <img
+                  src={battery}
+                  width="480px"
+                  height="250px"
+                  className="img-responsive appimg"
+                  alt="App"
+                />
+                <div className="appimgtext">
+                  <h2 className="apptitle">Bater&iacute;as</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                </div>
+              </a>
+            </div>
+          </Fade>
         </Col>
       </Row>
       <br />
       <Row>
         <Col lg={6} md={6} sm={6} className="columna">
-          <div className="appimgwrapper">
-            <a className="appimglink">
-              <img
-                src={balance}
-                width="480px"
-                height="550px"
-                className="img-responsive appimg alineacion"
-                alt="App"
-              />
-              <div className="appimgtext">
-                <h2 className="apptitle">Alineaci&oacute;n y balanceo</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-              </div>
-            </a>
-          </div>
+          <Fade left>
+            <div className="appimgwrapper">
+              <a className="appimglink">
+                <img
+                  src={balance}
+                  width="480px"
+                  height="550px"
+                  className="img-responsive appimg alineacion"
+                  alt="App"
+                />
+                <div className="appimgtext">
+                  <h2 className="apptitle">Alineaci&oacute;n y balanceo</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                </div>
+              </a>
+            </div>
+          </Fade>
         </Col>
         <br />
         <Col lg={6} md={6} sm={6}>
-          <div className="appimgwrapper">
-            <a className="appimglink">
-              <img
-                src={suspensions}
-                width="480px"
-                height="550px"
-                className="img-responsive appimg"
-                alt="App"
-              />
-              <div className="appimgtext">
-                <h2 className="apptitle">Suspensi&oacute;n</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-              </div>
-            </a>
-          </div>
+          <Fade right>
+            <div className="appimgwrapper">
+              <a className="appimglink">
+                <img
+                  src={suspensions}
+                  width="480px"
+                  height="550px"
+                  className="img-responsive appimg"
+                  alt="App"
+                />
+                <div className="appimgtext">
+                  <h2 className="apptitle">Suspensi&oacute;n</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                </div>
+              </a>
+            </div>
+          </Fade>
         </Col>
       </Row>
       <br />
       <Row>
         <Col lg={6} md={6} sm={6} className="columna">
-          <div className="appimgwrapper">
-            <a className="appimglink">
-              <img
-                src={maintenance}
-                width="480px"
-                height="550px"
-                className="img-responsive appimg alineacion"
-                alt="App"
-              />
-              <div className="appimgtext">
-                <h2 className="apptitle">Mantenciones</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-              </div>
-            </a>
-          </div>
-          <Title xsHidden smHidden>
-            Nuestros productos y servicios
-          </Title>
+          <Fade left> 
+            <div className="appimgwrapper">
+              <a className="appimglink">
+                <img
+                  src={maintenance}
+                  width="480px"
+                  height="550px"
+                  className="img-responsive appimg alineacion"
+                  alt="App"
+                />
+                <div className="appimgtext">
+                  <h2 className="apptitle">Mantenciones</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                </div>
+              </a>        
+            </div>
+          </Fade>
+          <Flip bottom>
+            <Title xsHidden smHidden>
+              Nuestros productos y servicios
+            </Title>
+          </Flip>
         </Col>
         
         <Col lg={6} md={6} sm={6}>
-          <div className="appimgwrapper">
-            <a className="appimglink">
-              <img
-                src={breaks}
-                width="480px"
-                height="550px"
-                className="img-responsive appimg"
-                alt="App"
-              />
-              <div className="appimgtext">
-                <h2 className="apptitle">Frenos</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-              </div>
-            </a>
-          </div>
+          <Fade right>
+            <div className="appimgwrapper">  
+              <a className="appimglink">
+                <img
+                  src={breaks}
+                  width="480px"
+                  height="550px"
+                  className="img-responsive appimg"
+                  alt="App"
+                />
+                <div className="appimgtext">
+                  <h2 className="apptitle">Frenos</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+                </div>
+              </a>
+            </div>
+          </Fade>
         </Col>
       </Row>
     </Grid>

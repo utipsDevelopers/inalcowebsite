@@ -22,7 +22,6 @@ import FireHawk700Section from "../containers/ProductPage/FireHawk700Section";
 import FireHawk900Section from "../containers/ProductPage/FireHawk900Section";
 import WinterforceSection from "../containers/ProductPage/WinterForceSection";
 import ACDelcoSection from "../containers/ProductPage/ACDelcoSection";
-import Breaksection from "../containers/ProductPage/BreaksSection";
 import SuspentionsSection from "../containers/ProductPage/SuspentionsSection";
 import ContactSection from "../containers/HomePage/ContactSection";
 import Footer from "../components/Footer";
@@ -131,13 +130,8 @@ class ProductPage extends React.Component {
                     </AnchorLink>
                   </MenuItem>
                   <MenuItem divider />
-                  <MenuItem eventKey={2.1}>
-                    <AnchorLink className="anchorcss" href="#frenos">
-                      <TitleNavDropdown> Frenos </TitleNavDropdown>
-                    </AnchorLink>
-                  </MenuItem>
-                  <MenuItem divider />
-                  <MenuItem eventKey={2.11}>
+                  
+                  <MenuItem eventKey={2.10}>
                     <AnchorLink className="anchorcss" href="#suspension">
                       <TitleNavDropdown> Suspensión </TitleNavDropdown>
                     </AnchorLink>
@@ -161,6 +155,10 @@ class ProductPage extends React.Component {
                   </MenuItem>
                   <MenuItem divider />
                   <MenuItem eventKey={2.3} className="anchorcss" href="/services">
+                      <TitleNavDropdown> Frenos </TitleNavDropdown>
+                  </MenuItem>
+                  <MenuItem divider />
+                  <MenuItem eventKey={2.4} className="anchorcss" href="/services">
                       <TitleNavDropdown> Mantenci&oacute;n </TitleNavDropdown>
                   </MenuItem>
                 </NavDropdown>
@@ -211,9 +209,6 @@ class ProductPage extends React.Component {
           </section>
           <section id="acdelco">
             <ACDelcoSection />
-          </section>
-          <section id="frenos">
-            <Breaksection />
           </section>
           <section id="suspension">
             <SuspentionsSection />

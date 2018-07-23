@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Grid, Row, Col } from "react-bootstrap";
+import Fade from 'react-reveal/Fade';
 import img from "../../img/03-19-Firestone-Engineer-Spin-Std.jpg";
 
 const FrontProductSection = () => (
@@ -8,10 +9,12 @@ const FrontProductSection = () => (
     <Grid bsClass="container">
       <Row className="show-grid">
         <Col lg={7}>
-          <FrontContent>
-            <Title1>Nuestros </Title1>
-            <Title1>productos</Title1>
-          </FrontContent>
+          <Fade left>
+            <FrontContent>
+              <Title1>Nuestros </Title1>
+              <Title1>productos</Title1>
+            </FrontContent>
+          </Fade>
         </Col>
       </Row>
     </Grid>

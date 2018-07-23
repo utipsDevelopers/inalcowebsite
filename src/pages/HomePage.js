@@ -101,10 +101,6 @@ class HomePage extends React.Component {
                   </MenuItem>
                   <MenuItem divider />
                   <MenuItem eventKey={2.10}  className="anchorcss" href="/products">
-                      <TitleNavDropdown> Frenos </TitleNavDropdown>
-                  </MenuItem>
-                  <MenuItem divider />
-                  <MenuItem eventKey={2.11}  className="anchorcss" href="/products">
                       <TitleNavDropdown> Suspensión </TitleNavDropdown>
                   </MenuItem>
                 </NavDropdown>
@@ -124,6 +120,11 @@ class HomePage extends React.Component {
                   <MenuItem divider />
                   <MenuItem eventKey={2.2} className="anchorcss" href="/services">
                       <TitleNavDropdown> Cambio de Aceite </TitleNavDropdown>
+                  </MenuItem>
+                  
+                  <MenuItem divider />
+                  <MenuItem eventKey={2.10}  className="anchorcss" href="/services">
+                      <TitleNavDropdown> Frenos </TitleNavDropdown>
                   </MenuItem>
                   <MenuItem divider />
                   <MenuItem eventKey={2.3} className="anchorcss" href="/services">

@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Grid, Row, Col } from "react-bootstrap";
+import Fade from 'react-reveal/Fade';
 import break1 from "../../img/brakes_img.png";
 import break2 from "../../img/brake1.jpg";
 import "../../css/LeftProductsSection.css";
@@ -9,36 +10,40 @@ const Breaksection = () => (
   <SuperContainer>
     <Grid bsClass="container">
       <Row className="show-grid">
-        <Col lg={6} md={6} sm={6} xs={12}>
-          <Title1>Frenos </Title1>
-          <br />
-          <br />
-          <div className="contenedordiv">
-            <Paragraph>
-              Lorem ipsum dolor sit amet consectetur adipiscing elit bibendum
-              neque dictum lobortis ridiculus lectus, non porta quis vehicula
-              tempor leo pulvinar magna elementum
-            </Paragraph>
-          </div>
-        </Col>
-        <Col lg={6} md={6} sm={6} xsHidden>
-          <div class="parent">
-            <img
-              src={break2}
-              width="380px"
-              height="450px"
-              className="image1570"
-              alt=""
-            />
-            <img
-              src={break1}
-              width="400px"
-              height="450px"
-              className="image2570"
-              alt=""
-            />
-          </div>
-        </Col>
+        <Fade left>
+          <Col lg={6} md={6} sm={6} xs={12}>
+            <Title1>Frenos </Title1>
+            <br />
+            <br />
+            <div className="contenedordiv">
+              <Paragraph>
+                Lorem ipsum dolor sit amet consectetur adipiscing elit bibendum
+                neque dictum lobortis ridiculus lectus, non porta quis vehicula
+                tempor leo pulvinar magna elementum
+              </Paragraph>
+            </div>
+          </Col>
+        </Fade>
+        <Fade right>
+          <Col lg={6} md={6} sm={6} xsHidden>
+            <div class="parent">
+              <img
+                src={break2}
+                width="380px"
+                height="450px"
+                className="image1570"
+                alt=""
+              />
+              <img
+                src={break1}
+                width="400px"
+                height="450px"
+                className="image2570"
+                alt=""
+              />
+            </div>
+          </Col>
+        </Fade>
       </Row>
     </Grid>
   </SuperContainer>

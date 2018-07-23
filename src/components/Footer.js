@@ -2,6 +2,8 @@ import React from "react";
 import { Row, Col, Grid } from "react-bootstrap";
 import styled from "styled-components";
 import FontAwesome from "react-fontawesome";
+import Zoom from 'react-reveal/Zoom';
+import Flip from 'react-reveal/Flip';
 import Inalcologo from "../img/inalcoFullLogo_white.png";
 import { compose, withProps } from "recompose";
 import "../css/Footer.css";
@@ -37,34 +39,40 @@ const Footer = () => (
     <AvailableImgsContainer>
       <Grid bsClass="container">
         <Row>
-          <Col lg={2} md={2} sm={2} mdPush={3} smPush={3}>
-            <a className="Icon">
-              <SuperItem name="phone" size="5x" />
-              <p style={{ marginTop: "10px", fontSize: "12px" }}>
-                +56 2283 49 101
-              </p>
-            </a>
-          </Col>
-          <Col lg={2} md={2} sm={2} mdPush={3} smPush={3}>
-            <a
-              className="Icon"
-              href="https://www.facebook.com/inalcocarservice/"
-            >
-              <SuperItem name="facebook-square" size="5x" />
+          <Zoom cascade>
+            <Col lg={2} md={2} sm={2} mdPush={3} smPush={3}>
+              <a className="Icon">
+                <SuperItem name="phone" size="5x" />
+                <p style={{ marginTop: "10px", fontSize: "12px" }}>
+                  +56 2283 49 101
+                </p>
+              </a>
+            </Col>
+          </Zoom>
+          <Zoom cascade>
+            <Col lg={2} md={2} sm={2} mdPush={3} smPush={3}>
+              <a
+                className="Icon"
+                href="https://www.facebook.com/inalcocarservice/"
+              >
+                <SuperItem name="facebook-square" size="5x" />
 
-              <p style={{ marginTop: "10px", fontSize: "12px" }}>
-                /inalcocarservice
-              </p>
-            </a>
-          </Col>
-          <Col lg={2} md={2} sm={2} mdPush={3} smPush={3}>
-            <a className="Icon">
-              <SuperItem name="envelope" size="5x" />
-              <p style={{ marginTop: "10px", fontSize: "12px" }}>
-                contacto@inalcocarservice.cl
-              </p>
-            </a>
-          </Col>
+                <p style={{ marginTop: "10px", fontSize: "12px" }}>
+                  /inalcocarservice
+                </p>
+              </a>
+            </Col>
+          </Zoom>
+          <Zoom cascade>
+            <Col lg={2} md={2} sm={2} mdPush={3} smPush={3}>
+              <a className="Icon">
+                <SuperItem name="envelope" size="5x" />
+                <p style={{ marginTop: "10px", fontSize: "12px" }}>
+                  contacto@inalcocarservice.cl
+                </p>
+              </a>           
+            </Col>
+          </Zoom>  
         </Row>
       </Grid>
 
@@ -73,13 +81,15 @@ const Footer = () => (
       </div>
       <Row>
         <Col lg={12} style={{ marginLeft: "24px" }}>
-          <img
-            src={Inalcologo}
-            className="logo"
-            alt=""
-            width="200px"
-            height="90px"
-          />
+          <Flip top cascade>
+            <img
+              src={Inalcologo}
+              className="logo"
+              alt=""
+              width="200px"
+              height="90px"
+            />
+          </Flip>
         </Col>
       </Row>
     </AvailableImgsContainer>

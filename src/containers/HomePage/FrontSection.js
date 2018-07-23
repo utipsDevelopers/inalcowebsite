@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Grid, Row, Col } from "react-bootstrap";
+import Fade from 'react-reveal/Fade';
 import img from "../../img/homePage_introWallpaper_definitive.jpg";
 
 const FrontSection = () => (
@@ -9,8 +10,10 @@ const FrontSection = () => (
       <Row className="show-grid">
         <Col lg={7}>
           <FrontContent>
-            <Title1>Hola!</Title1>
-            <Title2>Lorem ipsum dolor sit amet, consectetur adipiscing</Title2>
+            <Fade left>
+              <Title1>Hola!</Title1>
+              <Title2>Lorem ipsum dolor sit amet, consectetur adipiscing</Title2>
+            </Fade>  
           </FrontContent>
         </Col>
       </Row>

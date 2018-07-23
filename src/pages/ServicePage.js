@@ -16,7 +16,7 @@ import FeatureSection from "../containers/ServicePage/FeautreSection";
 import BalanceSection from "../containers/ServicePage/BalanceSection";
 import OilSection from "../containers/ServicePage/OilSection";
 import MaintenanceSection from "../containers/ServicePage/MaintenanceSection";
-
+import Breaksection from "../containers/ServicePage/BreaksSection";
 import ContactSection from "../containers/HomePage/ContactSection";
 import Footer from "../components/Footer";
 import LoadingScreen from "react-loading-screen";
@@ -107,10 +107,6 @@ class ServicePage extends React.Component {
                   </MenuItem>
                   <MenuItem divider />
                   <MenuItem eventKey={2.10}  className="anchorcss" href="/products">
-                      <TitleNavDropdown> Frenos </TitleNavDropdown>
-                  </MenuItem>
-                  <MenuItem divider />
-                  <MenuItem eventKey={2.11}  className="anchorcss" href="/products">
                       <TitleNavDropdown> Suspensión </TitleNavDropdown>
                   </MenuItem>
                 </NavDropdown>
@@ -136,6 +132,12 @@ class ServicePage extends React.Component {
                   </MenuItem>
                   <MenuItem divider />
                   <MenuItem eventKey={2.3}>
+                    <AnchorLink className="anchorcss" href="#frenos">
+                      <TitleNavDropdown> Frenos </TitleNavDropdown>
+                    </AnchorLink>
+                  </MenuItem>
+                  <MenuItem divider />
+                  <MenuItem eventKey={2.4}>
                     <AnchorLink className="anchorcss" href="#mantencion">
                       <TitleNavDropdown> Mantenci&oacute;n </TitleNavDropdown>
                     </AnchorLink>
@@ -168,6 +170,9 @@ class ServicePage extends React.Component {
           </section>
           <section id="cambioaceite">
             <OilSection />
+          </section>
+          <section id="frenos">
+           <Breaksection/>
           </section>
           <section id="mantencion">
             <MaintenanceSection />

@@ -1,6 +1,7 @@
 import React from "react";
 import { Row, Col, Grid } from "react-bootstrap";
 import styled from "styled-components";
+import Zoom from 'react-reveal/Zoom';
 import "../../css/FeatureSection.css";
 
 const FeatureSection = () => (
@@ -8,36 +9,42 @@ const FeatureSection = () => (
     <Grid bsClass="container">
       <Row>
         <Col lg={4} md={4} sm={12} xs={12}>
-          <div className="contenedor">
-            <h3 className="titleh3">Feature 1</h3>
-            <p className="parra">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-              eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim
-              ad minim veniam, quis
-            </p>
-          </div>
+          <Zoom cascade>
+            <div className="contenedor">
+              <h3 className="titleh3">Feature 1</h3>
+              <p className="parra">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis
+              </p>
+            </div>
+          </Zoom> 
         </Col>
 
         <Col lg={4} md={4} sm={12} xs={12}>
-          <div className="contenedor">
-            <h3 className="titleh3">Feature 2</h3>
-            <p className="parra">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-              eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim
-              ad minim veniam, quis
-            </p>
-          </div>
+          <Zoom cascade>
+            <div className="contenedor">
+              <h3 className="titleh3">Feature 2</h3>
+              <p className="parra">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis
+              </p>
+            </div>
+          </Zoom>    
         </Col>
 
         <Col lg={4} md={4} sm={12} xs={12}>
-          <div className="contenedor">
-            <h3 className="titleh3">Feature 3</h3>
-            <p className="parra">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-              eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim
-              ad minim veniam, quis
-            </p>
-          </div>
+          <Zoom cascade>
+            <div className="contenedor">
+              <h3 className="titleh3">Feature 3</h3>
+              <p className="parra">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim
+                ad minim veniam, quis
+              </p>
+            </div>
+          </Zoom>
         </Col>
       </Row>
     </Grid>

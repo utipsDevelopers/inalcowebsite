@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { Grid, Row, Col, Carousel } from "react-bootstrap";
+import Fade from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
 import prod1 from "../../img/homePagelastProductsSection_img1_temporal.png";
 import prod2 from "../../img/homePagelastProductsSection_img2_temporal.png";
 import prod3 from "../../img/homePagelastProductsSection_img3_temporal.png";
@@ -12,128 +14,132 @@ const MostSoldSection = () => (
     <Grid bsClass="container">
       <Row>
         <Col lg={12}>
-          <Title>Lo m&aacute;s vendido</Title>
+          <Fade left>
+            <Title>Lo m&aacute;s vendido</Title>
+          </Fade>
         </Col>
       </Row>
       <Row>
-        <Carousel className="carrousel-products">
-          <Carousel.Item>
-            <Row>
-              <Col lg={9} style={{ float: "none", margin: "0 auto" }}>
-                <Col lg={3} md={3} sm={3}>
-                  <img
-                    src={prod1}
-                    alt="Producto"
-                    width="200px"
-                    height="300px"
-                  />
-                  <h3 className="car-title-product"> Lorem ipsum </h3>
-                  <p className="car-par-product">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    eiusmod
-                  </p>
+        <Zoom>
+          <Carousel className="carrousel-products">
+            <Carousel.Item>
+              <Row>
+                <Col lg={9} style={{ float: "none", margin: "0 auto" }}>
+                  <Col lg={3} md={3} sm={3}>
+                    <img
+                      src={prod1}
+                      alt="Producto"
+                      width="200px"
+                      height="300px"
+                    />
+                    <h3 className="car-title-product"> Lorem ipsum </h3>
+                    <p className="car-par-product">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                      eiusmod
+                    </p>
+                  </Col>
+                  <Col lg={3} md={3} sm={3}>
+                    <img
+                      src={prod2}
+                      alt="Producto"
+                      width="200px"
+                      height="300px"
+                    />
+                    <h3 className="car-title-product"> Lorem ipsum </h3>
+                    <p className="car-par-product">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                      eiusmod
+                    </p>
+                  </Col>
+                  <Col lg={3} md={3} sm={3}>
+                    <img
+                      src={prod3}
+                      alt="Producto"
+                      width="200px"
+                      height="300px"
+                    />
+                    <h3 className="car-title-product"> Lorem ipsum </h3>
+                    <p className="car-par-product">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                      eiusmod
+                    </p>
+                  </Col>
+                  <Col lg={3} md={3} sm={3}>
+                    <img
+                      src={prod4}
+                      alt="Producto"
+                      width="200px"
+                      height="300px"
+                    />
+                    <h3 className="car-title-product"> Lorem ipsum </h3>
+                    <p className="car-par-product">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                      eiusmod
+                    </p>
+                  </Col>
                 </Col>
-                <Col lg={3} md={3} sm={3}>
-                  <img
-                    src={prod2}
-                    alt="Producto"
-                    width="200px"
-                    height="300px"
-                  />
-                  <h3 className="car-title-product"> Lorem ipsum </h3>
-                  <p className="car-par-product">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    eiusmod
-                  </p>
+              </Row>
+            </Carousel.Item>
+            <Carousel.Item>
+              <Row>
+                <Col lg={9} style={{ float: "none", margin: "0 auto" }}>
+                  <Col lg={3} md={3} sm={3}>
+                    <img
+                      src={prod1}
+                      alt="Club Palestino AceMatch"
+                      width="200px"
+                      height="300px"
+                    />
+                    <h3 className="car-title-product"> Lorem ipsum </h3>
+                    <p className="car-par-product">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                      eiusmod
+                    </p>
+                  </Col>
+                  <Col lg={3} md={3} sm={3}>
+                    <img
+                      src={prod2}
+                      alt="Club Sirio AceMatch"
+                      width="200px"
+                      height="300px"
+                    />
+                    <h3 className="car-title-product"> Lorem ipsum </h3>
+                    <p className="car-par-product">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                      eiusmod
+                    </p>
+                  </Col>
+                  <Col lg={3} md={3} sm={3}>
+                    <img
+                      src={prod3}
+                      alt="Club Sirio AceMatch"
+                      width="200px"
+                      height="300px"
+                    />
+                    <h3 className="car-title-product"> Lorem ipsum </h3>
+                    <p className="car-par-product">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                      eiusmod
+                    </p>
+                  </Col>
+                  <Col lg={3} md={3} sm={3}>
+                    <img
+                      src={prod4}
+                      alt="Club Sirio AceMatch"
+                      width="200px"
+                      height="300px"
+                    />
+                    <h3 className="car-title-product"> Lorem ipsum </h3>
+                    <p className="car-par-product">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                      eiusmod
+                    </p>
+                  </Col>
                 </Col>
-                <Col lg={3} md={3} sm={3}>
-                  <img
-                    src={prod3}
-                    alt="Producto"
-                    width="200px"
-                    height="300px"
-                  />
-                  <h3 className="car-title-product"> Lorem ipsum </h3>
-                  <p className="car-par-product">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    eiusmod
-                  </p>
-                </Col>
-                <Col lg={3} md={3} sm={3}>
-                  <img
-                    src={prod4}
-                    alt="Producto"
-                    width="200px"
-                    height="300px"
-                  />
-                  <h3 className="car-title-product"> Lorem ipsum </h3>
-                  <p className="car-par-product">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    eiusmod
-                  </p>
-                </Col>
-              </Col>
-            </Row>
-          </Carousel.Item>
-          <Carousel.Item>
-            <Row>
-              <Col lg={9} style={{ float: "none", margin: "0 auto" }}>
-                <Col lg={3} md={3} sm={3}>
-                  <img
-                    src={prod1}
-                    alt="Club Palestino AceMatch"
-                    width="200px"
-                    height="300px"
-                  />
-                  <h3 className="car-title-product"> Lorem ipsum </h3>
-                  <p className="car-par-product">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    eiusmod
-                  </p>
-                </Col>
-                <Col lg={3} md={3} sm={3}>
-                  <img
-                    src={prod2}
-                    alt="Club Sirio AceMatch"
-                    width="200px"
-                    height="300px"
-                  />
-                  <h3 className="car-title-product"> Lorem ipsum </h3>
-                  <p className="car-par-product">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    eiusmod
-                  </p>
-                </Col>
-                <Col lg={3} md={3} sm={3}>
-                  <img
-                    src={prod3}
-                    alt="Club Sirio AceMatch"
-                    width="200px"
-                    height="300px"
-                  />
-                  <h3 className="car-title-product"> Lorem ipsum </h3>
-                  <p className="car-par-product">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    eiusmod
-                  </p>
-                </Col>
-                <Col lg={3} md={3} sm={3}>
-                  <img
-                    src={prod4}
-                    alt="Club Sirio AceMatch"
-                    width="200px"
-                    height="300px"
-                  />
-                  <h3 className="car-title-product"> Lorem ipsum </h3>
-                  <p className="car-par-product">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    eiusmod
-                  </p>
-                </Col>
-              </Col>
-            </Row>
-          </Carousel.Item>
-        </Carousel>
+              </Row>
+            </Carousel.Item>
+          </Carousel>
+        </Zoom>
       </Row>
     </Grid>
   </SuperContainer>

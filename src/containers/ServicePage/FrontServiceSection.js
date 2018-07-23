@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Grid, Row, Col } from "react-bootstrap";
+import Fade from 'react-reveal/Fade';
 import img from "../../img/mantainance1.jpg";
 
 const FrontProductSection = () => (
@@ -8,10 +9,12 @@ const FrontProductSection = () => (
     <Grid bsClass="container">
       <Row className="show-grid">
         <Col lg={7} mdPush={5}>
-          <FrontContent>
-            <Title1>Nuestros </Title1>
-            <Title1>Servicios</Title1>
-          </FrontContent>
+          <Fade right>
+            <FrontContent>
+              <Title1>Nuestros </Title1>
+              <Title1>Servicios</Title1>
+            </FrontContent>
+          </Fade>
         </Col>
       </Row>
     </Grid>

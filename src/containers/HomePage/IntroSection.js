@@ -1,19 +1,22 @@
 import React from "react";
 import { Grid, Row, Col } from "react-bootstrap";
 import styled from "styled-components";
+import Fade from 'react-reveal/Fade';
 
 const IntroSection = () => (
   <SectionMargin>
     <Grid bsClass="container">
       <Row>
         <Col lg={7} md={7} mdPush={3}>
-          <Title1>Lorem ipsum dolor sit amet</Title1>
-          <Paragraph>
-            lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod
-            tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex
-            ea commodi consequat. Quis aute iure reprehenderit in voluptate
-          </Paragraph>
+          <Fade right>
+            <Title1>Lorem ipsum dolor sit amet</Title1>
+            <Paragraph>
+              lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod
+              tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex
+              ea commodi consequat. Quis aute iure reprehenderit in voluptate
+            </Paragraph>
+          </Fade>
         </Col>
       </Row>
     </Grid>
